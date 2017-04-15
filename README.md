@@ -6,13 +6,17 @@
 헬퍼에는 decision boundaries를 단일 function으로 처리하여 도식화 하는 등의 기능이 포함되어 있다.
 
 ## Machine Learning
-- [다항 분포 나이브 베이즈](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/multinomial-naive-bayes.ipynb)
+- [뉴스 분류](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/news-classification.ipynb)
     - [나이브 베이즈 비교](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/news-classification-nb.ipynb)
+    - [다항 분포 나이브 베이즈](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/multinomial-naive-bayes.ipynb)
 - [타이타닉 디시젼 트리](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/titanic.ipynb)
 - [로지스틱 회귀 w/ Keras](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/logistic-regression-with-keras.ipynb)
 - [서포트 벡터 머신](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/support-vector-machine-explained.ipynb)
 - [차원 축소]
     - [t-SNE 심화]
+- [모델 평가]
+- [알고리즘 체인과 파이프라인]
+- [텍스트 분석]
 
 ## Statistics
 - [깁스 샘플링](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
