@@ -1,10 +1,17 @@
-# Machine Learning
+# Jupyter Notebooks
+머신러닝, 통계학 기타 여러가지 이론적 기반을 도식화하여 엔지니어링 관점에서 이해하기 쉽도록 주피터 노트북으로 정리해봅니다.
+
+[kaon-learn](https://github.com/likejazz/kaon-learn) 이라는 scikit-learn, matplotlib, seaborn을 이용한 헬퍼 라이브러리를 구현하여 활용합니다.
+
+e.g. decision boundaries를 단일 function으로 처리하여 도식화 가능
+
+## Machine Learning
 - [다항 분포 나이브 베이즈](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/multinomial-naive-bayes.ipynb)
-- [뉴스 문장 분류](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/news-classification.ipynb)
     - [나이브 베이즈 비교](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/news-classification-nb.ipynb)
 - [타이타닉 디시젼 트리](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/titanic.ipynb)
 - [서포트 벡터 머신](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/support-vector-machine-explained.ipynb)
+- [차원 축소]
 
-# Statistics
+## Statistics
 - [깁스 샘플링](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
 - [정규 분포](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gaussian-distribution.ipynb)
