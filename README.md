@@ -1,9 +1,9 @@
 # Jupyter Notebooks
-머신러닝, 통계학 기타 여러가지 이론적 기반을 도식화하여 엔지니어링 관점에서 이해하기 쉽도록 주피터 노트북으로 정리해봅니다.
+머신러닝, 통계학 기타 여러가지 이론적 기반을 주피터 노트북으로 도식화 하여 정리한다.
 
-[kaon-learn](https://github.com/likejazz/kaon-learn) 이라는 scikit-learn, matplotlib, seaborn을 이용한 헬퍼 라이브러리를 구현하여 활용합니다.
+[kaon-learn](https://github.com/likejazz/kaon-learn)이라는 이름으로 scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 별도로 구현하여 활용, 생산성을 높인다.
 
-e.g. decision boundaries를 단일 function으로 처리하여 도식화 가능
+헬퍼에는 decision boundaries를 단일 function으로 처리하여 도식화 하는 등의 기능이 포함되어 있다.
 
 ## Machine Learning
 - [다항 분포 나이브 베이즈](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/multinomial-naive-bayes.ipynb)
