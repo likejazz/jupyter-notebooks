@@ -10,9 +10,9 @@
     - [나이브 베이즈 비교](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/news-classification-nb.ipynb)
     - [다항 분포 나이브 베이즈](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/multinomial-naive-bayes.ipynb)
 - [타이타닉 디시젼 트리](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/titanic.ipynb)
-- [로지스틱 회귀 w/ Keras](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/logistic-regression-with-keras.ipynb)
+- [로지스틱 회귀](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/logistic-regression.ipynb)
 - [서포트 벡터 머신과 신경망 비교](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/support-vector-machine-explained.ipynb)
-- [차원 축소]
+- [차원 축소](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/dimensionality-reduction.ipynb)
     - [t-SNE 심화]
 - [모델 평가]
 - [알고리즘 체인과 파이프라인]
