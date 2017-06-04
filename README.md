@@ -13,7 +13,6 @@
 - [로지스틱 회귀](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/logistic-regression.ipynb)
 - [서포트 벡터 머신과 신경망 비교](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/support-vector-machine-explained.ipynb)
 - [차원 축소](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/dimensionality-reduction.ipynb)
-    - [t-SNE 심화]
 - [데이타 표현](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/representing-data.ipynb)
 - [모델 평가](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/model-evaluation.ipynb)
 - [알고리즘 체인과 파이프라인](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/algorithm-chains-and-pipelines.ipynb)
