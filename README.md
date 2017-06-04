@@ -5,7 +5,7 @@
 
 헬퍼에는 decision boundaries를 단일 function으로 처리하여 도식화 하는 등의 기능이 포함되어 있다.
 
-아울러 여기에 작성한 노트북은 <Introduction to Machine Learning with Python>의 내용에서 대부분 발췌했다.
+아울러 여기에 작성한 노트북은 &lt;Introduction to Machine Learning with Python&gt;의 내용에서 대부분 발췌했다.
 
 ## Machine Learning
 - [뉴스 분류](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/news-classification.ipynb)
