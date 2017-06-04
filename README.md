@@ -1,4 +1,4 @@
-# Jupyter Notebooks
+# Sang-Kil Park's Jupyter Notebooks
 머신러닝, 통계학 기타 여러가지 이론적 기반을 주피터 노트북으로 도식화 하여 정리한다.
 
 [kaon-learn](https://github.com/likejazz/kaon-learn)이라는 이름으로 scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 별도로 구현하여 활용, 생산성을 높이며, 헬퍼에는 decision boundaries를 단일 function으로 처리하여 도식화 하는 등의 기능이 포함되어 있다.
