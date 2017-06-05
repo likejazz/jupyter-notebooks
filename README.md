@@ -1,9 +1,7 @@
-# Sang-Kil Park's Jupyter Notebooks
+# Jupyter Notebooks
 머신러닝, 통계학 기타 여러가지 이론적 기반을 주피터 노트북으로 도식화 하여 정리한다.
 
 scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 [kaon-learn](https://github.com/likejazz/kaon-learn)이라는 이름으로 별도로 구현하여 활용하며, 헬퍼에는 decision boundaries를 function으로 처리하여 도식화 하는 등의 기능이 포함되어 있다.
-
-여기에 작성한 scikit-learn을 활용한 노트북은 &lt;Introduction to Machine Learning with Python&gt; 책에서 대부분 발췌했다.
 
 ## Machine Learning
 - [뉴스 분류](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/news-classification.ipynb)
@@ -20,3 +18,6 @@ scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 [ka
 ## Statistics
 - [깁스 샘플링](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
 - [정규 분포](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gaussian-distribution.ipynb)
+
+# 참고
+- &lt;Introduction to Machine Learning with Python&gt;, Andreas C. Muller
