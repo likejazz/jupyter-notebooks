@@ -14,8 +14,11 @@ scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 [ka
 - [모델 평가](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/model-evaluation.ipynb)
 - [알고리즘 체인과 파이프라인](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/algorithm-chains-and-pipelines.ipynb)
 
-## Deep Learning
+## Support Vector Machine
+- [서포트 벡터 머신 분류](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/iris-svm.ipynb)
 - [서포트 벡터 머신과 신경망 비교](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/support-vector-machine-explained.ipynb)
+
+## Deep Learning
 - [퍼셉트론과 신경망](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/perceptron.ipynb)
 - [단어의 벡터 표현](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/vector-representation-of-words.ipynb)
 - [게시판 감정 분석](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/sentimental-analysis-word2vec-keras.ipynb)
