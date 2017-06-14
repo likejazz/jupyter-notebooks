@@ -22,7 +22,7 @@ scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 [ka
 - [퍼셉트론과 신경망](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/perceptron.ipynb)
 - [단어의 벡터 표현](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/vector-representation-of-words.ipynb)
 - [게시판 감정 분석](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/sentimental-analysis-word2vec-keras.ipynb)
-- [IMDB BLSTM 감정 분석](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/imdb-bidirectional-lstm.ipynb)
+- [IMDB RNN 감정 분석](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/imdb-sentimental-analysis-rnn.ipynb)
 
 ## Statistics
 - [깁스 샘플링](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
