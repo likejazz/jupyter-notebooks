@@ -27,6 +27,7 @@ scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 [ka
 ## Statistics
 - [깁스 샘플링](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
 - [정규 분포](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gaussian-distribution.ipynb)
+- [사다리 게임 확률 분석](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/ghost-leg-probabilities.ipynb)
 
 # 참고
 - &lt;Introduction to Machine Learning with Python&gt;, Andreas C. Muller
