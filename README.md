@@ -25,6 +25,7 @@ scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 [ka
 - [IMDB RNN 감정 분석](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/imdb-sentimental-analysis-rnn.ipynb)
 - [선형 대수: 전치 행렬과 미분](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/linear-algebra-transpose-differential.ipynb)
 - [역전파 계산](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/backpropagation.ipynb)
+- [Keras 중간층 디버깅](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/keras-intermediate-debugging.ipynb)
 
 ## Statistics
 - [깁스 샘플링](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
