@@ -9,12 +9,18 @@ import numpy as np
 max_features = 20
 maxlen = 5  # cut texts after this number of words (among top max_features most common words)
 batch_size = 128
-epochs = 50
+epochs = 2
 
 print('Loading data...')
 (x_train, y_train), (x_test, y_test) = imdb.load_data(num_words=max_features)
 print(len(x_train), 'train sequences')
 print(len(x_test), 'test sequences')
+
+i = 10
+x_train = x_train[:i]
+y_train = y_train[:i]
+x_test = x_test[:i]
+y_test = y_test[:i]
 
 print('Pad sequences (samples x time)')
 x_train = sequence.pad_sequences(x_train, maxlen=maxlen)
@@ -51,5 +57,11 @@ for name, weight in zip(names, weights):
     print(name, weight.shape)
     print(weight)
 
-# evaluate model
+# obtain the output of an intermediate layer
+intermediate_layer_model = Model(inputs=model.input,
+                                 outputs=model.get_layer('embedding_1').output)
+intermediate_output = intermediate_layer_model.predict(x_test[:1])
+
+print("Input:", x_test[:1])
+print("Intermediate output:", intermediate_output)
 print('Predict value:', model.predict(x_test[:1]))
