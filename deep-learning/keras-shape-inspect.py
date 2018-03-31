@@ -33,7 +33,7 @@ print('x_test shape:', x_test.shape)
 print('Build model...')
 """
 dtype=int32로 지정할 경우 tensorflow의 type conversion error가 발생한다.
-Embedding을 하면 float32로 원래 변경되기 때문에 기존에는 이런 문제가 없었다.
+기존에는 Embedding을 하면 float32로 변경되기 때문에 이런 문제가 없었다.
 """
 # inputs = Input(shape=(maxlen,), dtype='int32')
 inputs = Input(shape=(maxlen,), dtype='float32')
