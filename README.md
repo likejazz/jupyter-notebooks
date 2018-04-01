@@ -27,6 +27,19 @@ scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 [ka
 - [역전파 계산](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/backpropagation.ipynb)
 - [Keras 중간층 디버깅](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/keras-intermediate-debugging.ipynb)
 
+- [linear-regression-tensorflow.py](deep-learning/linear-regression-tensorflow.py)
+tf의 선형 회귀 epoch 단위 표현
+- [uci-news.py](deep-learning/uci-news.py)
+Kaggle의 uci-news-aggregator 데이터셋 CNN 분류
+- [mnist.py](deep-learning/mnist.py)
+MNIST fully connected layer tf 구현
+- [keras-shape-inspect.py](deep-learning/keras-shape-inspect.py)
+Keras 모델의 Merge, Concatenate 검증
+- [cnn-conv1d-internals.py](deep-learning/cnn-conv1d-internals.py)
+텍스트 임베딩의 Conv1D 검증
+- [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py)
+이미지의 `(samples, channels, rows, cols)` 4D tensor Conv2D 검증
+
 ## Statistics
 - [깁스 샘플링](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
 - [정규 분포](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gaussian-distribution.ipynb)
