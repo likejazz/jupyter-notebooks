@@ -39,7 +39,7 @@ Keras 모델의 Merge, Concatenate 검증
 - [cnn-conv1d-internals.py](deep-learning/cnn-conv1d-internals.py)
 텍스트 임베딩의 Conv1D 검증
 - [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py)
-이미지의 `(samples, channels, rows, cols)` 4D tensor Conv2D 검증
+이미지 4D Tensor Conv2D 검증
 
 ## Statistics
 - [깁스 샘플링](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
