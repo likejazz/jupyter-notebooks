@@ -27,6 +27,7 @@ scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리를 [ka
 - [역전파 계산](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/backpropagation.ipynb)
 - [Keras 중간층 디버깅](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/keras-intermediate-debugging.ipynb)
 
+노트북외에도 파이썬 구현을 아래와 같이 별도로 정리한다.
 - [linear-regression-tensorflow.py](deep-learning/linear-regression-tensorflow.py)
 tf의 선형 회귀 epoch 단위 표현
 - [uci-news.py](deep-learning/uci-news.py)
