@@ -30,7 +30,7 @@ model.compile(loss=keras.losses.mean_squared_error,
 model.summary()
 
 # %%
-model.fit(x, y, epochs=100)
+model.fit(x, y, epochs=1)
 
 # %%
 model.predict(x[:1])
@@ -41,17 +41,15 @@ weights = model.get_weights()
 
 # suppress scientific notation
 np.set_printoptions(suppress=True)
-j = 0
 for name, weight in zip(names, weights):
     print(name, weight.shape)
     print(weight)
 
-    if j == 1:
+    layer_type = name.split('/')[1]
+    if layer_type == 'kernel:0':
         w1 = weight  # (2, 3, 7))
-    elif j == 2:
+    elif layer_type == 'bias:0':
         b1 = weight  # (7,)
-
-    j += 1
 
     print()
 
@@ -68,16 +66,16 @@ print("output:", output)
 
 
 # %% calculate conv1d by hand
-e = embedding_output[0]
+eo = embedding_output[0]
 a = 0
-a += (e[0, 0] * w1[0, 0, 0])
-a += (e[1, 0] * w1[1, 0, 0])
+a += (eo[0, 0] * w1[0, 0, 0])
+a += (eo[1, 0] * w1[1, 0, 0])
 
-a += (e[0, 1] * w1[0, 1, 0])
-a += (e[1, 1] * w1[1, 1, 0])
+a += (eo[0, 1] * w1[0, 1, 0])
+a += (eo[1, 1] * w1[1, 1, 0])
 
-a += (e[0, 2] * w1[0, 2, 0])
-a += (e[1, 2] * w1[1, 2, 0])
+a += (eo[0, 2] * w1[0, 2, 0])
+a += (eo[1, 2] * w1[1, 2, 0])
 
 a += b1[0]
 

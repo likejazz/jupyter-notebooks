@@ -39,17 +39,15 @@ weights = model.get_weights()
 
 # suppress scientific notation
 np.set_printoptions(suppress=True)
-j = 0
 for name, weight in zip(names, weights):
     print(name, weight.shape)
     print(weight)
 
-    if j == 0:
+    layer_type = name.split('/')[1]
+    if layer_type == 'kernel:0':
         w1 = weight  # (2, 2, 3, 7)
-    elif j == 1:
+    elif layer_type == 'bias:0':
         b1 = weight  # (7,)
-
-    j += 1
 
     print()
 
