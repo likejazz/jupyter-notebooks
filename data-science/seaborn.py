@@ -18,3 +18,7 @@ plt.show()
 # looks similar with hist + kde
 sns.distplot(x)
 plt.show()
+
+# %% Plot data and a linear regression model fit.
+sns.regplot(np.arange(0, x.size), x)
+plt.show()
