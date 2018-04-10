@@ -23,7 +23,6 @@
     - [mnist.py](deep-learning/mnist.py) MNIST fully connected layer TensorFlow 구현
 
 ### Keras
-
 - [vector-representation-of-words.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/vector-representation-of-words.ipynb) 단어의 벡터 표현
 - [sentimental-analysis-word2vec-keras.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/sentimental-analysis-word2vec-keras.ipynb) 게시판 감정 분석
 - [imdb-sentimental-analysis-rnn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/imdb-sentimental-analysis-rnn.ipynb) IMDB RNN 감정 분석
@@ -32,6 +31,7 @@
 - [keras-shape-inspect.py](deep-learning/keras-shape-inspect.py) Keras 모델의 Merge, Concatenate 검증
 - [cnn-conv1d-internals.py](deep-learning/cnn-conv1d-internals.py) 텍스트 임베딩의 Conv1D 검증
 - [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py) 이미지 4D Tensor Conv2D 검증
+- [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) LSTM 계산 검증
 
 ## Math & Statistics
 - [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb) 깁스 샘플링
