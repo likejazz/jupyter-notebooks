@@ -5,22 +5,28 @@ import keras
 from keras.models import Sequential, Model
 from keras.layers import LSTM
 
+import matplotlib.pyplot as plt
+
 
 # Activation Functions and Derivatives
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
-x = np.array([
-    [[1.4, 1.5, 1.2],
-     [1.9, 1.1, 1.2],
-     [1.7, 1.4, 1.2],
-     [1.5, 1.3, 1.2]],
-])  # (None, 4, 3)
-y = np.array([[1, 1]])  # (None, 2)
+x = np.array([[
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+    [1.4, 1.5, 1.2],
+    [1.9, 1.1, 1.2],
+    [1.7, 1.4, 1.2],
+    [1.5, 1.3, 1.2],
+]])  # (None, 4, 3)
+y = np.array([[1, 1, 1, 1, 0]])  # (None, 5)
 
 model = Sequential()
-model.add(LSTM(2, input_shape=(4, 3)))
+model.add(LSTM(5, input_shape=(8, 3)))
 
 model.compile(loss='mse',
               optimizer='SGD',
@@ -55,21 +61,21 @@ del layer_type, weight, weights, name, names
 
 # %%
 n = 1
-units = 2  # LSTM layers
+units = 5  # LSTM layers
 
-# (3, 8) Embedding dim, LSTM layers * 4
+# (3, 20) Embedding dim, LSTM layers * 4
 Wi = kernel_0[:, 0:units]
 Wf = kernel_0[:, units:2 * units]
 Wc = kernel_0[:, 2 * units:3 * units]
 Wo = kernel_0[:, 3 * units:]
 
-# (2, 8) LSTM layers, LSTM layers * 4
+# (5, 20) LSTM layers, LSTM layers * 4
 Ui = recurrent_kernel_0[:, 0:units]
 Uf = recurrent_kernel_0[:, units:2 * units]
 Uc = recurrent_kernel_0[:, 2 * units:3 * units]
 Uo = recurrent_kernel_0[:, 3 * units:]
 
-# (8,) LSTM layers * 4
+# (20,) LSTM layers * 4
 bi = bias_0[0:units]
 bf = bias_0[units:2 * units]
 bc = bias_0[2 * units:3 * units]
@@ -79,6 +85,8 @@ ht_1 = np.zeros(n * units).reshape(n, units)
 Ct_1 = np.zeros(n * units).reshape(n, units)
 
 # --
+
+results = []
 for t in range(0, len(x[0, :])):
     xt = np.array(x[0, t])
 
@@ -92,6 +100,7 @@ for t in range(0, len(x[0, :])):
     ht_1 = ht  # memory state
     Ct_1 = Ct  # carry state
 
+    results.append(ht)
     print(t, ht)
 
 # remove unnecessary variables for scientific debugging.
@@ -104,3 +113,7 @@ intermediate_layer_model = Model(inputs=model.input,
 output = intermediate_layer_model.predict(x[:1])
 print()
 print("actual:", output)
+
+#
+plt.plot(np.array(results)[:, 0])
+plt.show()
