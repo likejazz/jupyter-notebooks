@@ -41,6 +41,7 @@
 
 ## Data Science
 - [seaborn.py](data-science/seaborn.py) Matplotlib, Seaborn 사용 예제
+- [hard_sigmoid.py](data-science/hard_sigmoid.py) Hard Sigmoid 비교
 
 # 기타
 
