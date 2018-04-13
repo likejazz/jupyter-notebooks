@@ -33,15 +33,14 @@
 - [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py) 이미지 4D Tensor Conv2D 검증
 - [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) LSTM 계산 검증
 
-## Math & Statistics
+## Math, Statistics & Data Science
 - [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb) 깁스 샘플링
 - [gaussian-distribution.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gaussian-distribution.ipynb) 가우시안 분포(정규 분포)
 - [ghost-leg-probabilities.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/ghost-leg-probabilities.ipynb) 사다리 게임 확률 분석
-- [sympy.py](data-science/sympy.py) Sympy를 이용한 편미분 계산
-
-## Data Science
+- [sympy.py](data-science/sympy.py) Sympy 편미분 계산
 - [seaborn.py](data-science/seaborn.py) Matplotlib, Seaborn 사용 예제
 - [hard_sigmoid.py](data-science/hard_sigmoid.py) Hard Sigmoid 비교
+- [poisson.py](data-science/poisson.py) 푸아송 분포
 
 # 기타
 
