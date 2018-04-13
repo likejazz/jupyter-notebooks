@@ -41,6 +41,7 @@
 - [seaborn.py](data-science/seaborn.py) Matplotlib, Seaborn 사용 예제
 - [hard_sigmoid.py](data-science/hard_sigmoid.py) Hard Sigmoid 비교
 - [poisson.py](data-science/poisson.py) 푸아송 분포
+- [odds-ratio.py](data-science/odds-ratio.py) Odds Ratio 1:3 연결 그래프
 
 # 기타
 
