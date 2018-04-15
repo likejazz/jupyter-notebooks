@@ -34,14 +34,15 @@
 - [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) LSTM 계산 검증
 
 ## Math, Statistics & Data Science
-- [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb) 깁스 샘플링
+- [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb) Gibbs Sampling
 - [gaussian-distribution.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gaussian-distribution.ipynb) 가우시안 분포(정규 분포)
 - [ghost-leg-probabilities.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/ghost-leg-probabilities.ipynb) 사다리 게임 확률 분석
 - [sympy.py](data-science/sympy.py) Sympy 편미분 계산
-- [seaborn.py](data-science/seaborn.py) Matplotlib, Seaborn 사용 예제
+- [seaborn.py](data-science/seaborn.py) Seaborn 그래프 예제
 - [hard_sigmoid.py](data-science/hard_sigmoid.py) Hard Sigmoid 비교
 - [poisson.py](data-science/poisson.py) 푸아송 분포
 - [odds-ratio.py](data-science/odds-ratio.py) Odds Ratio 1:3 연결 그래프
+- [vanishing-gradient.py](data-science/vanishing-gradient.py) Vanishing Gradient
 
 # 기타
 

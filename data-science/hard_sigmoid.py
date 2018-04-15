@@ -11,10 +11,8 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
-# %%
 x = np.arange(-10, 10, 0.1)
 
-# %%
 plt.plot(x, hard_sigmoid(x))
 plt.plot(x, sigmoid(x))
 plt.show()
