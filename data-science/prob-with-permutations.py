@@ -22,5 +22,5 @@ for i in range(total_trials):
     if pattern in sentence:
         matched_count += 1
 
-# Print out probability with permutations.
+# Print out Permutations with repetition probability.
 print("%d/%d %f" % (matched_count, total_trials, matched_count / total_trials))
