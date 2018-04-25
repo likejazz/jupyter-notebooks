@@ -23,4 +23,6 @@ for i in range(total_trials):
         matched_count += 1
 
 # Print out Permutations with repetition probability.
+# If the set S has k elements, the number of n-tuples over S is:
+# (sentence_length - n + 1) / (k ** n)
 print("%d/%d %f" % (matched_count, total_trials, matched_count / total_trials))
