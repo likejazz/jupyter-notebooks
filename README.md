@@ -43,7 +43,7 @@
 - [poisson.py](data-science/poisson.py) 푸아송 분포
 - [odds-ratio.py](data-science/odds-ratio.py) Odds Ratio 1:3 연결 그래프
 - [vanishing-gradient.py](data-science/vanishing-gradient.py)
-- [prob-with-permutations](data-science/prob-with-permutations.py) 중복 순열의 확률
+- [prob-with-permutations.py](data-science/prob-with-permutations.py) 중복 순열의 확률
 
 # 기타
 
