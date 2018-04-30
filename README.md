@@ -21,6 +21,7 @@
 - [tensorflow-weight.py](deep-learning/tensorflow-weight.py) TensorFlow의 weight 검증
     - [linear-regression-tensorflow.py](deep-learning/linear-regression-tensorflow.py)
     - [mnist.py](deep-learning/mnist.py) MNIST Dense TensorFlow 구현
+- [softmax.py](deep-learning/softmax.py) Softmax, Cross-Entropy Loss
 
 ### Keras
 - [vector-representation-of-words.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/vector-representation-of-words.ipynb)
