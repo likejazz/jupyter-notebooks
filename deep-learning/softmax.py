@@ -32,11 +32,11 @@ y = tf.nn.softmax(tf.matmul(X, W))
 # %%
 # training
 # cross entropy cost
-
 # Y = one-hot vector
-# y = softmax value
-cost = - tf.reduce_mean(tf.reduce_sum(Y * tf.log(y), axis=1))
-# cost = 1 - tf.reduce_mean(tf.reduce_sum(Y * y, axis=1))  # cross entropy variation
+# y = softmaxed value
+cost = - tf.reduce_mean(tf.reduce_sum(Y * tf.log(y) + (1 - Y) * tf.log(1 - y), axis=1))  # binomial cross-entropy error
+# cost = - tf.reduce_mean(tf.reduce_sum(Y * tf.log(y), axis=1)) # multinomial cross-entropy error
+# cost = 1 - tf.reduce_mean(tf.reduce_sum(Y * y, axis=1))       # strange cross-entropy variation I have created.
 train = tf.train.GradientDescentOptimizer(tf.Variable(0.001)).minimize(cost)
 
 sess = tf.Session()
@@ -44,7 +44,7 @@ sess.run(tf.global_variables_initializer())
 
 # %%
 results = []
-for i in range(100000 + 1):
+for i in range(20000 + 1):
     sess.run(train, feed_dict={X: x_data, Y: y_data})
     if i % 20 == 0:
         result = sess.run(cost, feed_dict={X: x_data, Y: y_data})
