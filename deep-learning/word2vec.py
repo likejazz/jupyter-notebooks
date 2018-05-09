@@ -11,6 +11,7 @@ from keras.preprocessing.text import Tokenizer
 import numpy as np
 
 import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.manifold import TSNE
 
 np.set_printoptions(suppress=True)
@@ -224,6 +225,10 @@ plt.plot(loss_vs_epoch)
 plt.show()
 
 # %%
+import matplotlib
+
+matplotlib.rc('font', family='AppleGothic')
+
 tsne = TSNE(perplexity=30, n_components=2, init='pca', n_iter=5000, method='exact')
 low_dim_embs = tsne.fit_transform(W1)
 for i in range(0, len(tokenizer.word_index)):
@@ -232,6 +237,8 @@ for i in range(0, len(tokenizer.word_index)):
         if i == c:
             break
         c += 1
-    plt.scatter(low_dim_embs[i, 0], low_dim_embs[i, 1], label=k)
-plt.legend(loc='best')
+    plt.scatter(low_dim_embs[i, 0], low_dim_embs[i, 1])
+    plt.annotate(k,
+                 xy=(low_dim_embs[i, 0], low_dim_embs[i, 1]))
+# plt.legend(loc='best')
 plt.show()
