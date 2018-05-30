@@ -33,7 +33,7 @@ y = np.array([[1, 1, 1, 1, 0]])  # (None, 5)
 model = Sequential()
 model.add(LSTM(5, input_shape=(10, 3)))
 
-model.compile(loss='mse',
+model.compile(loss='MSE',
               optimizer='SGD',
               metrics=['accuracy'])
 model.summary()
@@ -94,15 +94,14 @@ results = []
 for t in range(0, len(x[0, :])):
     xt = np.array(x[0, t])
 
-    it = hard_sigmoid(np.dot(xt, Wi) + np.dot(ht_1, Ui) + bi)  # input gate
     ft = hard_sigmoid(np.dot(xt, Wf) + np.dot(ht_1, Uf) + bf)  # forget gate
-    Ct = ft * Ct_1 + it * np.tanh(np.dot(xt, Wc) + np.dot(ht_1, Uc) + bc)
+    it = hard_sigmoid(np.dot(xt, Wi) + np.dot(ht_1, Ui) + bi)  # input gate
     ot = hard_sigmoid(np.dot(xt, Wo) + np.dot(ht_1, Uo) + bo)  # output gate
-
+    Ct = ft * Ct_1 + it * np.tanh(np.dot(xt, Wc) + np.dot(ht_1, Uc) + bc)
     ht = ot * np.tanh(Ct)
 
-    ht_1 = ht  # memory state
-    Ct_1 = Ct  # carry state
+    ht_1 = ht  # hidden state, previous memory state
+    Ct_1 = Ct  # cell state, previous carry state
 
     results.append(ht)
     print(t, ht)
@@ -116,7 +115,7 @@ intermediate_layer_model = Model(inputs=model.input,
                                  outputs=model.output)
 output = intermediate_layer_model.predict(x[:1])
 print()
-print("actual:", output)
+print("Keras:", output)
 
 # plot hidden state changes
 plt.plot(np.array(results)[:, 0])
