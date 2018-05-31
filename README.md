@@ -46,6 +46,7 @@
 - [odds-ratio.py](data-science/odds-ratio.py) Odds Ratio 1:3 연결 그래프
 - [vanishing-gradient.py](data-science/vanishing-gradient.py)
 - [prob-with-permutations.py](data-science/prob-with-permutations.py) 중복 순열의 확률
+- [euclidean-v-cosine.ipynb](data-science/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
 
 # 기타
 
