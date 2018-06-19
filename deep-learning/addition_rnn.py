@@ -159,7 +159,7 @@ print(y_val.shape)
 # Try replacing GRU, or SimpleRNN.
 RNN = layers.LSTM
 HIDDEN_SIZE = 128
-BATCH_SIZE = 128
+BATCH_SIZE = 512
 LAYERS = 1
 
 # %%
@@ -196,7 +196,7 @@ model.summary()
 # %%
 # Train the model each generation and show predictions against the validation
 # dataset.
-for iteration in range(1, 1 + 1):
+for iteration in range(1, 10 + 1):
     print()
     print('-' * 50)
     print('Iteration', iteration)
