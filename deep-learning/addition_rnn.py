@@ -1,8 +1,7 @@
 # %%
-'''
-ref. https://github.com/keras-team/keras/blob/master/examples/addition_rnn.py
-
+"""
 An implementation of sequence to sequence learning for performing addition
+<https://github.com/keras-team/keras/blob/master/examples/addition_rnn.py>
 
 Input: "535+61"
 Output: "596"
@@ -15,19 +14,7 @@ and
 "Sequence to Sequence Learning with Neural Networks"
 http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf
 Theoretically it introduces shorter term dependencies between source and target.
-
-Two digits reversed:
-+ One layer LSTM (128 HN), 5k training examples = 99% train/test accuracy in 55 epochs
-
-Three digits reversed:
-+ One layer LSTM (128 HN), 50k training examples = 99% train/test accuracy in 100 epochs
-
-Four digits reversed:
-+ One layer LSTM (128 HN), 400k training examples = 99% train/test accuracy in 20 epochs
-
-Five digits reversed:
-+ One layer LSTM (128 HN), 550k training examples = 99% train/test accuracy in 30 epochs
-'''
+"""
 
 from __future__ import print_function
 from keras.models import Sequential
@@ -37,12 +24,6 @@ from six.moves import range
 
 
 class CharacterTable(object):
-    """Given a set of characters:
-    + Encode them to a one hot integer representation
-    + Decode the one hot integer representation to their character output
-    + Decode a vector of probabilities to their character output
-    """
-
     def __init__(self, chars):
         """Initialize character table.
 
@@ -120,18 +101,15 @@ while len(questions) < TRAINING_SIZE:
     expected.append(ans)
 print('Total addition questions:', len(questions))
 
-# %%
 print('Vectorization...')
 x = np.zeros((len(questions), MAXLEN, len(chars)), dtype=np.bool)
 y = np.zeros((len(questions), DIGITS + 1, len(chars)), dtype=np.bool)
 
-# %%
 for i, sentence in enumerate(questions):
     x[i] = ctable.encode(sentence, MAXLEN)
 for i, sentence in enumerate(expected):
     y[i] = ctable.encode(sentence, DIGITS + 1)
 
-# %%
 # Shuffle (x, y) in unison as the later parts of x will almost all be larger
 # digits.
 indices = np.arange(len(y))
@@ -139,13 +117,10 @@ np.random.shuffle(indices)
 x = x[indices]
 y = y[indices]
 
-# %%
 # Explicitly set apart 10% for validation data that we never train over.
 split_at = len(x) - len(x) // 10
 (x_train, x_val) = x[:split_at], x[split_at:]
 (y_train, y_val) = y[:split_at], y[split_at:]
-
-# %%
 
 print('Training Data:')
 print(x_train.shape)
@@ -155,18 +130,17 @@ print('Validation Data:')
 print(x_val.shape)
 print(y_val.shape)
 
+# --
+
 # %%
 # Try replacing GRU, or SimpleRNN.
 RNN = layers.LSTM
 HIDDEN_SIZE = 128
 BATCH_SIZE = 512
 
-# %%
 print('Build model...')
 model = Sequential()
-# "Encode" the input sequence using an RNN, producing an output of HIDDEN_SIZE.
-# Note: In a situation where your input sequences have a variable length,
-# use input_shape=(None, num_feature).
+# "Encode" the input sequence using an RNN.
 model.add(RNN(HIDDEN_SIZE, input_shape=(MAXLEN, len(chars))))
 # As the decoder RNN's input, repeatedly provide with the last hidden state of
 # RNN for each time step. Repeat 'DIGITS + 1' times as that's the maximum
@@ -175,12 +149,10 @@ model.add(layers.RepeatVector(DIGITS + 1))
 model.add(RNN(HIDDEN_SIZE, return_sequences=True))
 # model.add(layers.Dense(HIDDEN_SIZE))
 
-# Apply a dense layer to the every temporal slice of an input. For each of step
-# of the output sequence, decide which character should be chosen.
 # model.add(layers.TimeDistributed(layers.Dense(len(chars))))
 model.add(layers.Dense(len(chars)))
 model.add(layers.Activation('softmax'))
-# ref. http://dev.likejazz.com/post/175034937891/multiclass-classification%EC%97%90%EC%84%9C%EC%9D%98-binary-crossentropy
+# <https://stackoverflow.com/a/46004661/3513266>
 # from keras.metrics import categorical_accuracy
 # model.compile(loss='binary_crossentropy',
 #               optimizer='adam', metrics=[categorical_accuracy])
@@ -189,29 +161,24 @@ model.compile(loss='categorical_crossentropy',
 model.summary()
 
 # %%
-# Train the model each generation and show predictions against the validation
-# dataset.
-for iteration in range(1, 10 + 1):
-    print()
-    print('-' * 50)
-    print('Iteration', iteration)
-    model.fit(x_train, y_train,
-              batch_size=BATCH_SIZE,
-              epochs=10,
-              validation_data=(x_val, y_val))
-    # Select 10 samples from the validation set at random so we can visualize
-    # errors.
-    for i in range(10):
-        ind = np.random.randint(0, len(x_val))
-        rowx, rowy = x_val[np.array([ind])], y_val[np.array([ind])]
-        preds = model.predict_classes(rowx, verbose=0)
-        q = ctable.decode(rowx[0])
-        correct = ctable.decode(rowy[0])
-        guess = ctable.decode(preds[0], calc_argmax=False)
-        print('Q', q[::-1] if REVERSE else q, end=' ')
-        print('T', correct, end=' ')
-        if correct == guess:
-            print(colors.ok + '☑' + colors.close, end=' ')
-        else:
-            print(colors.fail + '☒' + colors.close, end=' ')
-        print(guess)
+model.fit(x_train, y_train,
+          batch_size=BATCH_SIZE,
+          epochs=100,
+          validation_data=(x_val, y_val))
+
+# %%
+# Select 10 samples from the validation set at random so we can visualize errors.
+for i in range(10):
+    ind = np.random.randint(0, len(x_val))
+    rowx, rowy = x_val[np.array([ind])], y_val[np.array([ind])]
+    preds = model.predict_classes(rowx)
+    q = ctable.decode(rowx[0])
+    correct = ctable.decode(rowy[0])
+    guess = ctable.decode(preds[0], calc_argmax=False)
+    print('Q', q[::-1] if REVERSE else q, end=' ')
+    print('T', correct, end=' ')
+    if correct == guess:
+        print(colors.ok + '☑' + colors.close, end=' ')
+    else:
+        print(colors.fail + '☒' + colors.close, end=' ')
+    print(guess)
