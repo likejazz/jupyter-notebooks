@@ -18,7 +18,7 @@ Theoretically it introduces shorter term dependencies between source and target.
 
 from __future__ import print_function
 from keras.models import Sequential
-from keras import layers
+from keras.layers import LSTM, RepeatVector, Dense, Activation, TimeDistributed
 import numpy as np
 from six.moves import range
 
@@ -65,8 +65,7 @@ TRAINING_SIZE = 50000
 DIGITS = 3
 REVERSE = True
 
-# Maximum length of input is 'int + int' (e.g., '345+678'). Maximum length of
-# int is DIGITS.
+# Maximum length of input is 'int + int' (e.g., '345+678'). Maximum length of int is DIGITS.
 MAXLEN = DIGITS + 1 + DIGITS
 
 # All the numbers, plus sign and space for padding.
@@ -110,8 +109,7 @@ for i, sentence in enumerate(questions):
 for i, sentence in enumerate(expected):
     y[i] = ctable.encode(sentence, DIGITS + 1)
 
-# Shuffle (x, y) in unison as the later parts of x will almost all be larger
-# digits.
+# Shuffle (x, y) in unison as the later parts of x will almost all be larger digits.
 indices = np.arange(len(y))
 np.random.shuffle(indices)
 x = x[indices]
@@ -133,25 +131,20 @@ print(y_val.shape)
 # --
 
 # %%
-# Try replacing GRU, or SimpleRNN.
-RNN = layers.LSTM
-HIDDEN_SIZE = 128
-BATCH_SIZE = 512
+BATCH_SIZE = 64
 
 print('Build model...')
 model = Sequential()
 # "Encode" the input sequence using an RNN.
-model.add(RNN(HIDDEN_SIZE, input_shape=(MAXLEN, len(chars))))
+model.add(LSTM(64, input_shape=(MAXLEN, len(chars))))
 # As the decoder RNN's input, repeatedly provide with the last hidden state of
 # RNN for each time step. Repeat 'DIGITS + 1' times as that's the maximum
 # length of output, e.g., when DIGITS=3, max output is 999+999=1998.
-model.add(layers.RepeatVector(DIGITS + 1))
-model.add(RNN(HIDDEN_SIZE, return_sequences=True))
-# model.add(layers.Dense(HIDDEN_SIZE))
+model.add(RepeatVector(DIGITS + 1))
+model.add(LSTM(32, return_sequences=True))
 
-# model.add(layers.TimeDistributed(layers.Dense(len(chars))))
-model.add(layers.Dense(len(chars)))
-model.add(layers.Activation('softmax'))
+model.add(TimeDistributed(Dense(len(chars))))
+model.add(Activation('softmax'))
 # <https://stackoverflow.com/a/46004661/3513266>
 # from keras.metrics import categorical_accuracy
 # model.compile(loss='binary_crossentropy',
@@ -163,7 +156,7 @@ model.summary()
 # %%
 model.fit(x_train, y_train,
           batch_size=BATCH_SIZE,
-          epochs=100,
+          epochs=50,
           validation_data=(x_val, y_val))
 
 # %%
@@ -175,6 +168,7 @@ for i in range(10):
     q = ctable.decode(rowx[0])
     correct = ctable.decode(rowy[0])
     guess = ctable.decode(preds[0], calc_argmax=False)
+    print('%5d' % ind, end=': ')
     print('Q', q[::-1] if REVERSE else q, end=' ')
     print('T', correct, end=' ')
     if correct == guess:
@@ -182,3 +176,38 @@ for i in range(10):
     else:
         print(colors.fail + '☒' + colors.close, end=' ')
     print(guess)
+
+# %% Print final results.
+i = 2975
+output_final = model.predict(np.array([x_val[i]]))
+
+print(ctable.decode(x_val[i]),
+      ctable.decode(y_val[i]),
+      ctable.decode(output_final[0]))
+
+# %%
+from keras.models import Model
+
+intermediate_layer_model = Model(inputs=model.input,
+                                 outputs=model.layers[4].output)
+output = intermediate_layer_model.predict(np.array([x_val[i]]))
+print(output.shape)
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.clf()
+# h = np.reshape(output[0], (-1, 8))
+# sns.heatmap(h)
+sns.heatmap(output[0])
+plt.show()
+
+# %% Print weights.
+names = [weight.name for layer in model.layers for weight in layer.weights]
+weights = model.get_weights()
+
+# suppress scientific notation
+np.set_printoptions(suppress=True)
+for name, weight in zip(names, weights):
+    print(name, weight.shape)
+    print(weight)
