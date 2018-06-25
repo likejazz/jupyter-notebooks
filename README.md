@@ -25,6 +25,7 @@
 - [word2vec.py](deep-learning/word2vec.py)
 - [addition_rnn.py](deep-learning/addition_rnn.py) Learning to Execute의 Addition Task 구현
 - [attention_dense.py](deep-learning/attention_dense.py)
+- [attention_lstm.py](deep-learning/attention_lstm.py)
 
 ### Keras
 - [vector-representation-of-words.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/vector-representation-of-words.ipynb)
