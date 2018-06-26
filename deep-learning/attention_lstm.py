@@ -60,59 +60,33 @@ def get_data_recurrent(n, time_steps, input_dim, attention_column=15):
 INPUT_DIM = 2
 TIME_STEPS = 20
 # if True, the attention vector is shared across the input_dimensions where the attention is applied.
-SINGLE_ATTENTION_VECTOR = False
-APPLY_ATTENTION_BEFORE_LSTM = False
+SINGLE_ATTENTION_VECTOR = True
 
 N = 300000
 inputs_1, outputs = get_data_recurrent(N, TIME_STEPS, INPUT_DIM)
 
-if APPLY_ATTENTION_BEFORE_LSTM:
-    inputs = Input(shape=(TIME_STEPS, INPUT_DIM,))  # None, 20, 32
-    inputs_dim = inputs.shape[2]
+inputs = Input(shape=(TIME_STEPS, INPUT_DIM,))
 
-    # -- Start of attention_3d_block
-    a = Permute((2, 1))(inputs)
-    a = Reshape((int(inputs_dim), TIME_STEPS))(a)
-    a = Dense(TIME_STEPS, activation='softmax')(a)
+lstm_out = LSTM(32, return_sequences=True)(inputs)  # None, 20, 32
+lstm_out_dim = lstm_out.shape[2]  # 32
 
-    if SINGLE_ATTENTION_VECTOR:
-        a = Lambda(lambda x: K.mean(x, axis=1), name='dim_reduction')(a)
-        a = RepeatVector(int(inputs_dim))(a)
+# -- Start of attention_3d_block
+a = Permute((2, 1))(lstm_out)  # similar with transpose()
+a = Reshape((int(lstm_out_dim), TIME_STEPS))(a)
+a = Dense(TIME_STEPS, activation='softmax')(a)
 
-    a_probs = Permute((2, 1), name='attention_vec')(a)
-    attention_mul = merge([inputs, a_probs], name='attention_mul', mode='mul')
-    # -- End of attention_3d_block
+if SINGLE_ATTENTION_VECTOR:
+    a = Lambda(lambda x: K.mean(x, axis=1), name='dim_reduction')(a)
+    a = RepeatVector(int(lstm_out_dim))(a)
 
-    lstm_units = 32
-    # attention_mul = LSTM(lstm_units, return_sequences=False)(attention_mul)
-    attention_mul = Flatten()(attention_mul)
-    output = Dense(1, activation='sigmoid')(attention_mul)
+a_probs = Permute((2, 1), name='attention_vec')(a)
+attention_mul = merge([lstm_out, a_probs], name='attention_mul', mode='mul')
+# -- End of attention_3d_block
 
-    model = Model(input=[inputs], output=output)
-else:
-    inputs = Input(shape=(TIME_STEPS, INPUT_DIM,))
+attention_mul = Flatten()(attention_mul)
+output = Dense(1, activation='sigmoid')(attention_mul)
 
-    lstm_units = 32
-    lstm_out = LSTM(lstm_units, return_sequences=True)(inputs)  # None, 20, 32
-    lstm_out_dim = lstm_out.shape[2]
-
-    # -- Start of attention_3d_block
-    a = Permute((2, 1))(lstm_out)
-    a = Reshape((int(lstm_out_dim), TIME_STEPS))(a)
-    a = Dense(TIME_STEPS, activation='softmax')(a)
-
-    if SINGLE_ATTENTION_VECTOR:
-        a = Lambda(lambda x: K.mean(x, axis=1), name='dim_reduction')(a)
-        a = RepeatVector(int(lstm_out_dim))(a)
-
-    a_probs = Permute((2, 1), name='attention_vec')(a)
-    attention_mul = merge([lstm_out, a_probs], name='attention_mul', mode='mul')
-    # -- End of attention_3d_block
-
-    attention_mul = Flatten()(attention_mul)
-    output = Dense(1, activation='sigmoid')(attention_mul)
-
-    model = Model(input=[inputs], output=output)
+model = Model(input=[inputs], output=output)
 
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 model.summary()
@@ -123,7 +97,7 @@ history = model.fit([inputs_1], outputs, epochs=1, batch_size=128, validation_sp
 
 # %%
 attention_vectors = []
-for i in range(10):
+for i in range(20):
     t, to = get_data_recurrent(1, TIME_STEPS, INPUT_DIM)
     attention_vector = np.mean(get_activations(model, t,
                                                print_shape_only=True,
