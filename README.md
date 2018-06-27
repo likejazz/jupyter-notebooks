@@ -1,6 +1,4 @@
-# Jupyter Notebooks and more
-머신러닝, 딥러닝, 수학, 통계학등 여러가지 이론적 기반을 주피터 노트북으로 도식화 하여 정리한다. PyCharm 2018의 code cells 지원으로 IPython으로 구현한 코드도 함께 정리한다.
-
+# A Collection of Jupyter Notebooks for Machine Learning
 ## Machine Learning
 - [news-classification.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/news-classification.ipynb) Decision Tree, Random Forest, Naive Bayes
     - [news-classification-nb.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/news-classification-nb.ipynb) Naive Bayes 비교
@@ -23,9 +21,6 @@
     - [mnist.py](deep-learning/mnist.py) MNIST Dense TensorFlow 구현
 - [softmax.py](deep-learning/softmax.py) Softmax, Cross-Entropy Loss
 - [word2vec.py](deep-learning/word2vec.py)
-- [addition_rnn.py](deep-learning/addition_rnn.py) Learning to Execute의 Addition Task 구현
-- [attention_dense.py](deep-learning/attention_dense.py)
-- [attention_lstm.py](deep-learning/attention_lstm.py)
 
 ### Keras
 - [vector-representation-of-words.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/vector-representation-of-words.ipynb)
@@ -37,6 +32,9 @@
 - [cnn-conv1d-internals.py](deep-learning/cnn-conv1d-internals.py) 텍스트 임베딩의 Conv1D 검증
 - [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py) 이미지 4D Tensor Conv2D 검증
 - [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) LSTM 계산 검증
+- [addition_rnn.py](deep-learning/addition_rnn.py) Learning to Execute의 Addition Task Seq2Seq 구현
+- [attention_dense.py](deep-learning/attention_dense.py)
+- [attention_lstm.py](deep-learning/attention_lstm.py)
 
 ## Math, Statistics & Data Science
 - [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
@@ -53,4 +51,4 @@
 
 # 기타
 
-scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리는 [kaon-learn](https://github.com/likejazz/kaon-learn)이라는 이름으로 별도로 구현하여 활용하며, 헬퍼에는 decision boundaries를 function으로 처리하여 도식화 하는 등의 기능이 포함되어 있다. 해당 라이브러리 및 주피터 노트북의 초안은 Andreas C. Muller의 『Introduction to Machine Learning with Python』 를 많이 참고 했다.
+scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리는 [kaon-learn](https://github.com/likejazz/kaon-learn)이라는 이름으로 별도로 구현하여 활용하며, 헬퍼에는 decision boundaries를 function으로 처리하여 도식화 하는 등의 기능이 포함되어 있다. 해당 라이브러리 및 주피터 노트북의 초안은 Andreas C. Muller의 『Introduction to Machine Learning with Python』 를 참고 했다.
