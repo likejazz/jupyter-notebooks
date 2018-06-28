@@ -21,10 +21,6 @@
     - [mnist.py](deep-learning/mnist.py) MNIST Dense TensorFlow 구현
 - [softmax.py](deep-learning/softmax.py) Softmax, Cross-Entropy Loss
 - [word2vec.py](deep-learning/word2vec.py)
-- [addition_rnn.py](deep-learning/addition_rnn.py) Learning to Execute의 Addition Task 구현
-- [addition_seq2seq.py](deep-learning/addition_seq2seq.py) Seq2Seq w/ Attention
-- [attention_dense.py](deep-learning/attention_dense.py)
-- [attention_lstm.py](deep-learning/attention_lstm.py)
 
 ### Keras
 - [vector-representation-of-words.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/vector-representation-of-words.ipynb)
@@ -37,6 +33,7 @@
 - [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py) 이미지 4D Tensor Conv2D 검증
 - [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) LSTM 계산 검증
 - [addition_rnn.py](deep-learning/addition_rnn.py) Learning to Execute의 Addition Task Seq2Seq 구현
+- [addition_seq2seq.py](deep-learning/addition_seq2seq.py) Seq2Seq w/ Attention
 - [attention_dense.py](deep-learning/attention_dense.py)
 - [attention_lstm.py](deep-learning/attention_lstm.py)
 
