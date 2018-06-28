@@ -24,6 +24,7 @@
 - [softmax.py](deep-learning/softmax.py) Softmax, Cross-Entropy Loss
 - [word2vec.py](deep-learning/word2vec.py)
 - [addition_rnn.py](deep-learning/addition_rnn.py) Learning to Execute의 Addition Task 구현
+- [addition_seq2seq.py](deep-learning/addition_seq2seq.py) Seq2Seq w/ Attention
 - [attention_dense.py](deep-learning/attention_dense.py)
 - [attention_lstm.py](deep-learning/attention_lstm.py)
 
