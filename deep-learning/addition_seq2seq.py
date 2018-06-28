@@ -114,13 +114,14 @@ print(y_val.shape)
 # %%
 from keras.models import Sequential
 from keras.layers import LSTM, RepeatVector, Dense, Activation, TimeDistributed
-from seq2seq.models import SimpleSeq2Seq, AttentionSeq2Seq
+from seq2seq.models import SimpleSeq2Seq, AttentionSeq2Seq, Seq2Seq
 
 BATCH_SIZE = 64
 
 print('Build model...')
 model = Sequential()
-model.add(AttentionSeq2Seq(32, 4, input_dim=len(chars), input_length=MAXLEN, hidden_dim=64))
+# model.add(AttentionSeq2Seq(32, 4, input_dim=len(chars), input_length=MAXLEN, hidden_dim=64))
+model.add(Seq2Seq(32, 4, input_dim=len(chars), input_length=MAXLEN, hidden_dim=64))
 # model.add(SimpleSeq2Seq(32, 4, input_dim=len(chars), input_length=MAXLEN, hidden_dim=64))
 model.add(Dense(12))
 model.add(Activation('softmax'))
@@ -129,10 +130,21 @@ model.compile(loss='categorical_crossentropy',
 model.summary()
 
 # %%
-model.fit(x_train, y_train,
-          batch_size=BATCH_SIZE,
-          epochs=50,
-          validation_data=(x_val, y_val))
+history = model.fit(x_train, y_train,
+                    batch_size=BATCH_SIZE,
+                    epochs=10,
+                    validation_data=(x_val, y_val))
+
+# %%
+import matplotlib.pyplot as plt
+# summarize history for accuracy
+plt.plot(history.history['acc'])
+plt.plot(history.history['val_acc'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.show()
 
 # %%
 # Select 10 samples from the validation set at random so we can visualize errors.
