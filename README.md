@@ -34,6 +34,7 @@
 - [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) LSTM 계산 검증
 - [addition_rnn.py](deep-learning/addition_rnn.py) Learning to Execute의 Addition Task Seq2Seq 구현
 - [addition_seq2seq.py](deep-learning/addition_seq2seq.py) Seq2Seq w/ Attention
+- [lstm-seq2seq.py](deep-learning/addition_seq2seq.py)
 - [attention_dense.py](deep-learning/attention_dense.py)
 - [attention_lstm.py](deep-learning/attention_lstm.py)
 
