@@ -28,18 +28,18 @@
 - [imdb-sentimental-analysis-rnn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/imdb-sentimental-analysis-rnn.ipynb)
 - [uci-news.py](deep-learning/uci-news.py) Kaggle's  uci-news-aggregator 데이터셋 Classification with CNN
 - [keras-intermediate-debugging.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/keras-intermediate-debugging.ipynb) Keras 중간층 디버깅
-- [keras-shape-inspect.py](deep-learning/keras-shape-inspect.py) Keras 모델의 Merge, Concatenate 검증
+    - [keras-shape-inspect.py](deep-learning/keras-shape-inspect.py) Keras 모델의 Merge, Concatenate 검증
 - [cnn-conv1d-internals.py](deep-learning/cnn-conv1d-internals.py) 텍스트 임베딩의 Conv1D 검증
-- [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py) 이미지 4D Tensor Conv2D 검증
-- [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) LSTM 계산 검증
+    - [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py) 이미지 4D Tensor Conv2D 검증
+    - [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) LSTM 계산 검증
 
 #### Seq2Seq, Attention
 - [addition_rnn.py](deep-learning/addition_rnn.py) Learning to Execute의 Addition Task Seq2Seq 구현
-- [addition_seq2seq.py](deep-learning/addition_seq2seq.py) Addition Task의 Seq2Seq w/ Attention 구현
-- [lstm-seq2seq.py](deep-learning/addition_seq2seq.py) Basic Character-Level Seq2Seq Model
+    - [addition_seq2seq.py](deep-learning/addition_seq2seq.py) Addition Task의 Seq2Seq w/ Attention 구현
+    - [lstm-seq2seq.py](deep-learning/lstm-seq2seq.py) Basic Character-Level Seq2Seq Model
 - [attention_dense.py](deep-learning/attention_dense.py)
-- [attention_lstm.py](deep-learning/attention_lstm.py)
-- [keras-attention](deep-learning/keras-attention) Visualize Attention
+    - [attention_lstm.py](deep-learning/attention_lstm.py)
+    - [keras-attention](keras-attention/) Visualize Attention
 
 ## Math, Statistics & Data Science
 - [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/gibbs-sampling.ipynb)
