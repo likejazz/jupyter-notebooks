@@ -9,7 +9,7 @@
 - [representing-data.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/representing-data.ipynb)
 - [model-evaluation.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/model-evaluation.ipynb)
 - [algorithm-chains-and-pipelines.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/algorithm-chains-and-pipelines.ipynb)
-- [iris-svm.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/iris-svm.ipynb) Support Vector Machine with IRIS dataset
+- [iris-svm-trees.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/iris-svm-trees.ipynb) IRIS dataset w/ SVM, Decision Tree, Random Forest
 - [support-vector-machine-explained.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/support-vector-machine-explained.ipynb) Comparison beween SVM and Neural Network
 
 ## Deep Learning
