@@ -11,6 +11,7 @@
 - [algorithm-chains-and-pipelines.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/algorithm-chains-and-pipelines.ipynb)
 - [iris-svm-trees.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/iris-svm-trees.ipynb) IRIS dataset w/ SVM, Decision Tree, Random Forest
 - [support-vector-machine-explained.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/support-vector-machine-explained.ipynb) Comparison beween SVM and Neural Network
+- [xgboost.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/xgboost.ipynb) XGBoost GridSearchCV
 
 ## Deep Learning
 - [perceptron.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/perceptron.ipynb) Perceptron, Neural Network
