@@ -1,11 +1,11 @@
 # %%
 import numpy as np
+from numpy import argmax
 
 np.random.seed(1337)  # for reproducibility
 from keras.models import Model
-from keras.layers import Input, Dense, merge
-
-from keras_tqdm import TQDMNotebookCallback, TQDMCallback
+from keras.layers import Input, Dense, Add, Multiply, Activation
+from keras.utils import to_categorical
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -47,49 +47,62 @@ def get_data(n, input_dim, attention_column=1):
     :return: x: model inputs, y: model targets
     """
     x = np.random.standard_normal(size=(n, input_dim))
-    y = np.random.randint(low=0, high=2, size=(n, 1))
+    y = np.random.randint(low=0, high=5, size=(n, 1))  # 0 ~ 4
     if attention_column is not None:
         x[:, attention_column] = y[:, 0]
-    return x, y
+
+    return x, to_categorical(y)
 
 
 # --
-
+# %%
 input_dim = 32
 N = 10000
 inputs_1, outputs = get_data(N, input_dim)
 
 inputs = Input(shape=(input_dim,))
-
 # ATTENTION PART STARTS HERE
-attention_probs = Dense(input_dim, activation='softmax', name='attention_vec')(inputs)
-attention_mul = merge([inputs, attention_probs], name='attention_mul', mode='mul')
+x = Dense(input_dim, name='attention_vec')(inputs)
+x = Activation('softmax')(x)
+x = Multiply(name='attention_mul')([inputs, x])
 # ATTENTION PART FINISHES HERE
+x = Dense(64)(x)
+x = Dense(5, activation='softmax')(x)
+model = Model(input=[inputs], output=x)
 
-attention_mul = Dense(64)(attention_mul)
-output = Dense(1, activation='sigmoid')(attention_mul)
-model = Model(input=[inputs], output=output)
-
-model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.summary()
 
 # %%
-history = model.fit([inputs_1], outputs, epochs=30, batch_size=128, validation_split=0.1, verbose=0,
-                    callbacks=[TQDMCallback()])
+history = model.fit([inputs_1], outputs, epochs=100, batch_size=128, validation_split=0.1, verbose=2)
 
 # %%
 t, to = get_data(1, input_dim, attention_column=1)
 
 # Attention vector corresponds to the second matrix.
 # The first one is the Inputs output.
+plt.clf()
 attention_vector = get_activations(model, t,
                                    print_shape_only=True,
-                                   layer_pos=1).flatten()
+                                   layer_pos=2).flatten()
 print('input =', t)
-print('attention =', attention_vector)
+plt.title("input values")
+plt.bar(range(input_dim), t[0])
+plt.show()
 
+print('attention =', attention_vector)
 pd.DataFrame(attention_vector, columns=['attention (%)']).plot(kind='bar',
                                                                title='Attention Mechanism as '
                                                                      'a function of input'
-                                                                     ' dimensions.')
+                                                                     ' dimensions. output: ' + str(argmax(to)))
+plt.show()
+
+# %%
+plt.title("fully connected layer before applying softmax")
+plt.bar(range(32), get_activations(model, t, print_shape_only=True, layer_pos=1).flatten())
+plt.show()
+
+# %%
+plt.title("fully connected layer - Dense(64)")
+plt.bar(range(64), get_activations(model, t, print_shape_only=True, layer_pos=4).flatten())
 plt.show()
