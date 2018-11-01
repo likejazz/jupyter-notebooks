@@ -1,3 +1,4 @@
+# %%
 import keras
 from keras.datasets import imdb
 from keras.preprocessing import sequence
@@ -15,20 +16,24 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
+import sys
+sys.path.append('/Users/kaonpark/workspace/github.com/likejazz/jupyter-notebooks/deep-learning')
 from util import make_w2v_embeddings
 
+# %%
 # --
 
 # Parameters
 max_features = 5000
 maxlen = 50
-gpus = 2
+gpus = 1
 batch_size = 1024 * gpus
 embedding_dims = 300
 epochs = 10
 
 print('Loading data...')
 DATA_FILE = "~/.kaggle/datasets/uciml/news-aggregator-dataset/uci-news-aggregator.csv"
+# DATA_FILE = "../uci-news-aggregator.csv"
 df = pd.read_csv(DATA_FILE)
 
 df['TITLE_n'] = df['TITLE']
@@ -49,6 +54,7 @@ print('Pad sequences (samples x time)')
 x_train = sequence.pad_sequences(x_train, padding='pre', truncating='post', maxlen=maxlen)
 x_test = sequence.pad_sequences(x_test, padding='pre', truncating='post', maxlen=maxlen)
 
+# %%
 print('x_train shape:', x_train.shape)
 print('x_test shape:', x_test.shape)
 print('y_train shape:', y_train.shape)

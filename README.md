@@ -23,6 +23,7 @@
 - [softmax.py](deep-learning/softmax.py) Softmax, Cross-Entropy Loss
 - [sin-graph-prediction.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/sin-graph-prediction.ipynb)
 - [time-series-prediction-rnn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/time-series-prediction-rnn.ipynb)
+- [pytorch-grad.py](deep-learning/pytorch-grad.py) PyTorch gradient 활용
 
 ### Keras
 - [keras-intermediate-debugging.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/keras-intermediate-debugging.ipynb) Keras 중간층 디버깅
@@ -36,7 +37,7 @@
 - [vector-representation-of-words.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/vector-representation-of-words.ipynb)
 - [sentimental-analysis-word2vec-keras.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/sentimental-analysis-word2vec-keras.ipynb)
 - [imdb-sentimental-analysis-rnn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/imdb-sentimental-analysis-rnn.ipynb)
-- [uci-news.py](deep-learning/uci-news.py) Kaggle's  uci-news-aggregator 데이터셋 Classification with CNN
+- [uci-news.py](deep-learning/uci-news.py) Kaggle's uci-news-aggregator dataset Classification with CNN
 - [addition_rnn.py](deep-learning/addition_rnn.py) Learning to Execute의 Addition Task Seq2Seq 구현
     - [addition_seq2seq.py](deep-learning/addition_seq2seq.py) Addition Task의 Seq2Seq w/ Attention 구현
     - [lstm-seq2seq.py](deep-learning/lstm-seq2seq.py) Basic Character-Level Seq2Seq Model
