@@ -74,7 +74,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 model.summary()
 
 # %%
-history = model.fit([inputs_1], outputs, epochs=100, batch_size=128, validation_split=0.1, verbose=2)
+history = model.fit(inputs_1, outputs, epochs=100, batch_size=128, validation_split=0.1, verbose=2)
 
 # %%
 t, to = get_data(1, input_dim, attention_column=1)
