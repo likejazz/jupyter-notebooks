@@ -46,7 +46,7 @@
     - [keras-attention](keras-attention/) Visualize Attention
 - [elmo.py](deep-learning/elmo.py) Sentimental Analysis with ELMo embedding
 - [allennlp-tutorial.py](deep-learning/allennlp-tutorial.py) AllenNLP Tutorial
-- [cnn-classification.py](tensorboard/cnn-classification.py.py) Text Classification with CNN/TensorBoard
+- [cnn-classification.py](tensorboard/cnn-classification.py) Text Classification with CNN/TensorBoard
 
 ## Math, Statistics & Data Science
 - [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/gibbs-sampling.ipynb)
