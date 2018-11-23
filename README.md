@@ -3,7 +3,7 @@
 - [news-classification.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/news-classification.ipynb) Decision Tree, Random Forest, Naive Bayes
     - [news-classification-nb.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/news-classification-nb.ipynb) Naive Bayes 비교
     - [multinomial-naive-bayes.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/multinomial-naive-bayes.ipynb)
-- [titanic.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/titanic.ipynb) 타이타닉 Decision Tree, Random Forest
+- [titanic.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/titanic.ipynb) Titanic Decision Tree, Random Forest
 - [logistic-regression.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/logistic-regression.ipynb)
 - [dimensionality-reduction.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/dimensionality-reduction.ipynb)
 - [representing-data.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/representing-data.ipynb)
@@ -11,7 +11,7 @@
 - [algorithm-chains-and-pipelines.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/algorithm-chains-and-pipelines.ipynb)
 - [iris-svm-trees.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/iris-svm-trees.ipynb) IRIS dataset w/ SVM, Decision Tree, Random Forest
 - [support-vector-machine-explained.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/support-vector-machine-explained.ipynb) Comparison between SVM and Neural Network
-- [xgboost.py](machine-learning/xgboost.py) XGBoost GridSearchCV
+- [xgboost.py](machine-learning/xgboost.py) GridSearchCV w/ XGBoost
 
 ## Deep Learning
 - [perceptron.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/perceptron.ipynb) Perceptron, Neural Network
