@@ -19,7 +19,7 @@
 - [backpropagation.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/backpropagation.ipynb)
 - [tensorflow-weight.py](deep-learning/tensorflow-weight.py)
     - [linear-regression-tensorflow.py](deep-learning/linear-regression-tensorflow.py)
-    - [mnist.py](deep-learning/mnist.py) TensorFlow implementaion on the MNIST dataset.
+    - [mnist.py](deep-learning/mnist.py) TensorFlow Implementaion on the MNIST dataset.
 - [softmax.py](deep-learning/softmax.py) Softmax, Cross-Entropy Loss
 - [sin-graph-prediction.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/sin-graph-prediction.ipynb)
 - [time-series-prediction-rnn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/time-series-prediction-rnn.ipynb)
@@ -27,7 +27,7 @@
 - [keras-intermediate-debugging.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/keras-intermediate-debugging.ipynb) Intermediate Layer Debugging in Keras.
     - [keras-shape-inspect.py](deep-learning/keras-shape-inspect.py) Validate Merge, Concatenate methods in Keras.
 - [cnn-conv1d-internals.py](deep-learning/cnn-conv1d-internals.py) Validate Conv1D on the Text Embeddings.
-    - [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py) Validate Conv2D ont the Image dataset.
+    - [cnn-conv2d-internals.py](deep-learning/cnn-conv2d-internals.py) Validate Conv2D on the Image dataset.
     - [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) Validate LSTM calculation.
 
 ### NLP
