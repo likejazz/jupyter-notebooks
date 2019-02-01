@@ -12,6 +12,7 @@
 - [iris-svm-trees.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/iris-svm-trees.ipynb) SVM, Decision Tree, Random Forest on the IRIS dataset.
 - [support-vector-machine-explained.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/support-vector-machine-explained.ipynb) Comparison between SVM and Neural Network
 - [xgboost.py](machine-learning/xgboost.py) GridSearchCV with XGBoost
+- [loss-3d.py](machine-learning/loss-3d.py) 3D Visualization linear graph with loss value.
 
 ## Deep Learning
 - [perceptron.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/perceptron.ipynb) Scikit-Learn Perceptron, Neural Network, Keras on the IRIS dataset.
