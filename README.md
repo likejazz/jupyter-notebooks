@@ -1,5 +1,6 @@
-# A Collection of Jupyter Notebooks for Machine Learning
-## Machine Learning
+# Code Implementations of Machine Learning
+
+## Conventional Machine Learning
 - [news-classification.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/news-classification.ipynb) Decision Tree, Random Forest, Naive Bayes on the UCI News dataset.
     - [news-classification-nb.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/news-classification-nb.ipynb) Trains Naive Bayes Classifiers on the UCI News dataset.
     - [multinomial-naive-bayes.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/multinomial-naive-bayes.ipynb) Naive Bayes internals.
@@ -15,7 +16,7 @@
 - [loss-3d.py](machine-learning/loss-3d.py) 3D Visualization linear graph with loss value.
 
 ## Deep Learning
-- [perceptron.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/perceptron.ipynb) Scikit-Learn Perceptron, Neural Network, Keras on the IRIS dataset.
+- [perceptron.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/perceptron.ipynb) Scikit-Learn's Perceptron, Neural Network, Keras on the IRIS dataset.
 - [linear-algebra-transpose-differential.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/linear-algebra-transpose-differential.ipynb)
 - [backpropagation.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/backpropagation.ipynb)
 - [tensorflow-weight.py](deep-learning/tensorflow-weight.py)
@@ -24,7 +25,7 @@
 - [softmax.py](deep-learning/softmax.py) Softmax, Cross-Entropy Loss
 - [sin-graph-prediction.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/sin-graph-prediction.ipynb)
 - [time-series-prediction-rnn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/time-series-prediction-rnn.ipynb)
-- [pytorch-grad.py](pytorch/pytorch-grad.py) PyTorch Gradients.
+- [pytorch-grad.py](pytorch/pytorch-grad.py) Gradients calculation using PyTorch.
 - [keras-intermediate-debugging.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/keras-intermediate-debugging.ipynb) Intermediate Layer Debugging in Keras.
     - [keras-shape-inspect.py](deep-learning/keras-shape-inspect.py) Validate Merge, Concatenate methods in Keras.
 - [cnn-conv1d-internals.py](deep-learning/cnn-conv1d-internals.py) Validate Conv1D on the Text Embeddings.
@@ -32,6 +33,7 @@
     - [lstm-keras-inspect.py](deep-learning/lstm-keras-inspect.py) Validate LSTM calculation.
 
 ### NLP
+- [nnlm.py](deep-learning/nnlm.py) Implementation of Paper 'A Neural Probabilistic Language Model(Bengio et al., 2003)'
 - [word2vec.py](deep-learning/word2vec.py) Word2Vec
 - [vector-representation-of-words.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/vector-representation-of-words.ipynb)
 - [sentimental-analysis-word2vec-keras.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/sentimental-analysis-word2vec-keras.ipynb)
@@ -60,7 +62,3 @@
 - [vanishing-gradient.py](data-science/vanishing-gradient.py)
 - [prob-with-permutations.py](data-science/prob-with-permutations.py) Probabilities with Duplicate Permutations.
 - [euclidean-v-cosine.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
-
-# 기타
-
-scikit-learn, matplotlib, seaborn 등을 이용한 헬퍼 라이브러리는 [kaon-learn](https://github.com/likejazz/kaon-learn)이라는 이름으로 별도로 구현하여 활용한다. 헬퍼 라이브러리에는 decision boundaries를 도식화 하는 함수를 포함한 여러가지 기능이 구현되어 있다. 해당 라이브러리 및 주피터 노트북의 초안은 Andreas C. Muller의 『Introduction to Machine Learning with Python』 를 참고 했다.
