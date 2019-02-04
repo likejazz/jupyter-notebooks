@@ -1,4 +1,5 @@
 # %%
+# This code is heavily derived from https://github.com/graykode/nlp-tutorial/blob/master/1-1.NNLM/NNLM-Torch.py
 import numpy as np
 import torch
 import torch.nn as nn
@@ -15,7 +16,7 @@ word_list = " ".join(sentences).split()
 word_list = list(set(word_list))
 word_dict = {w: i for i, w in enumerate(word_list)}
 number_dict = {i: w for i, w in enumerate(word_list)}
-n_class = len(word_dict)  # number of Vocabulary
+n_class = len(word_dict)  # Total number of Vocabulary
 
 # NNLM Parameters
 n_tokens = 2
