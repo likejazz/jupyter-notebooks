@@ -40,6 +40,7 @@
     - [news-classification-nb.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/news-classification-nb.ipynb) Trains Naive Bayes Classifiers on the UCI News dataset.
     - [multinomial-naive-bayes.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/multinomial-naive-bayes.ipynb) Naive Bayes internals.
 - [titanic.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/titanic.ipynb) Decision Tree, Random Forest on the Titanic dataset.
+- [linear-regression.py](machine-learning/linear-regression.py)
 - [logistic-regression.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/logistic-regression.ipynb)
 - [dimensionality-reduction.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/dimensionality-reduction.ipynb)
 - [representing-data.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/representing-data.ipynb)
