@@ -47,6 +47,8 @@
 - [model-evaluation.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/model-evaluation.ipynb) Decision Regions, Confusion Matrix.
 - [algorithm-chains-and-pipelines.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/algorithm-chains-and-pipelines.ipynb)
 - [iris-svm-trees.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/iris-svm-trees.ipynb) SVM, Decision Tree, Random Forest on the IRIS dataset.
+    - [iris-visualized-by-shap-and-lime.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/iris-visualized-by-shap-and-lime.ipynb) IRIS classification visualized by SHAP and LIME.
+    - [keras-lstm-for-imdb-sentiment-classification.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/keras-lstm-for-imdb-sentiment-classification.ipynb) Keras LSTM for IMDb Sentiment Classification visualized by SHAP.
 - [support-vector-machine-explained.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/support-vector-machine-explained.ipynb) Comparison between SVM and Neural Network
 - [xgboost.py](machine-learning/xgboost.py) GridSearchCV with XGBoost
 - [loss-3d.py](machine-learning/loss-3d.py) 3D Visualization linear graph with loss value.
