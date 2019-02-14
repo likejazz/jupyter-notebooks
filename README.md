@@ -1,4 +1,4 @@
-# Code Implementations of Machine Learning
+# Code Implementations for Machine Learning
 
 ## Deep Learning
 - [perceptron.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/perceptron.ipynb) Scikit-Learn's Perceptron, Neural Network, Keras on the IRIS dataset.
