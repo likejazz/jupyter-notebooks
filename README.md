@@ -65,3 +65,4 @@
 - [vanishing-gradient.py](data-science/vanishing-gradient.py)
 - [prob-with-permutations.py](data-science/prob-with-permutations.py) Probabilities with Duplicate Permutations.
 - [euclidean-v-cosine.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
+- [calc-entropy.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/calc-entropy.ipynb) Entropy graph when one probability is high.
