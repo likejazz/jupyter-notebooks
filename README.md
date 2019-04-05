@@ -37,6 +37,7 @@
 
 ## Conventional Machine Learning
 - [iris-dtreeviz.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/iris-dtreeviz.ipynb) Decision Tree visualization for IRIS dataset.
+- [decision-tree-from-scratch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/decision-tree-from-scratch.ipynb) Decision Tree from a Scratch
 - [news-classification.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/news-classification.ipynb) Decision Tree, Random Forest, Naive Bayes on the UCI News dataset.
     - [news-classification-nb.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/news-classification-nb.ipynb) Trains Naive Bayes Classifiers on the UCI News dataset.
     - [multinomial-naive-bayes.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/multinomial-naive-bayes.ipynb) Naive Bayes internals.
