@@ -2,7 +2,7 @@
 
 ## Deep Learning
 - [perceptron.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/perceptron.ipynb) Scikit-Learn's Perceptron, Neural Network, Keras on the IRIS dataset.
-- [linear-algebra-transpose-differential.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/linear-algebra-transpose-differential.ipynb)
+- [linear-algebra-transpose-differential.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/linear-algebra-transpose-differential.ipynb)
 - [backpropagation.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/backpropagation.ipynb)
 - [tensorflow-weight.py](deep-learning/tensorflow-weight.py)
     - [linear-regression-tensorflow.py](deep-learning/linear-regression-tensorflow.py)
@@ -20,20 +20,20 @@
     - [addition_seq2seq.py](deep-learning/addition_seq2seq.py) Implements Seq2Seq with Attention for Addition Task.
 - [attention_dense.py](deep-learning/attention_dense.py) Attention Mechanism
     - [attention_lstm.py](deep-learning/attention_lstm.py)
-    - [keras-attention](keras-attention/) Visualize Attention
+    - [keras-attention](deep-learning/keras-attention/) Visualize Attention
     
 ### NLP
-- [nnlm.py](nlp/nnlm.py) Implementation of Paper "A Neural Probabilistic Language Model(Bengio et al., 2003)"
-- [word2vec.py](nlp/word2vec.py)
+- [nnlm.py](deep-learning/nlp/nnlm.py) Implementation of Paper "A Neural Probabilistic Language Model(Bengio et al., 2003)"
+- [word2vec.py](deep-learning/nlp/word2vec.py)
 - [vector-representation-of-words.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/nlp/vector-representation-of-words.ipynb)
 - [sentimental-analysis-word2vec-keras.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/nlp/sentimental-analysis-word2vec-keras.ipynb)
 - [imdb-sentimental-analysis-rnn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/nlp/imdb-sentimental-analysis-rnn.ipynb)
-- [uci-news.py](nlp/uci-news.py) Multi-Class Classification with CNN on the UCI News dataset.
-- [lstm-seq2seq.py](nlp/lstm-seq2seq.py) Basic Character-Level Seq2Seq Model
-- [elmo.py](nlp/elmo.py) Sentimental Analysis with ELMo Embeddings.
-- [allennlp-tutorial.py](nlp/allennlp-tutorial.py) AllenNLP Tutorial
-- [cnn-classification.py](nlp/cnn-classification.py) Text Classification with CNN/TensorBoard
-- [bert.py](nlp/bert.py) Example codes for BERT article.
+- [uci-news.py](deep-learning/nlp/uci-news.py) Multi-Class Classification with CNN on the UCI News dataset.
+- [lstm-seq2seq.py](deep-learning/nlp/lstm-seq2seq.py) Basic Character-Level Seq2Seq Model
+- [elmo.py](deep-learning/nlp/elmo.py) Sentimental Analysis with ELMo Embeddings.
+- [allennlp-tutorial.py](deep-learning/nlp/allennlp-tutorial.py) AllenNLP Tutorial
+- [cnn-classification.py](deep-learning/nlp/cnn-classification.py) Text Classification with CNN/TensorBoard
+- [bert.py](deep-learning/nlp/bert.py) Example codes for BERT article.
 
 ## Conventional Machine Learning
 - [iris-dtreeviz.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/iris-dtreeviz.ipynb) Decision Tree visualization for IRIS dataset.
@@ -55,16 +55,17 @@
 - [xgboost.py](machine-learning/xgboost.py) GridSearchCV with XGBoost
 - [loss-3d.py](machine-learning/loss-3d.py) 3D Visualization linear graph with loss value.
 
-## Math, Statistics & Data Science
-- [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/gibbs-sampling.ipynb)
-- [gaussian-distribution.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/gaussian-distribution.ipynb) Gaussion Distribution(Normal Distribution)
-- [ghost-leg-probabilities.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/ghost-leg-probabilities.ipynb) Ghost Leg Probabilities.
-- [sympy.py](data-science/sympy.py) Partial Derivatives using Sympy.
-- [seaborn.py](data-science/seaborn.py)
-- [hard_sigmoid.py](data-science/hard_sigmoid.py)
-- [poisson.py](data-science/poisson.py) Poisson Distribution
-- [odds-ratio.py](data-science/odds-ratio.py) Odds Ratio 1:3 Relation Graph
-- [vanishing-gradient.py](data-science/vanishing-gradient.py)
-- [prob-with-permutations.py](data-science/prob-with-permutations.py) Probabilities with Duplicate Permutations.
-- [euclidean-v-cosine.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
-- [calc-entropy.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/calc-entropy.ipynb) Entropy graph when one probability is high.
+## Math, Statistics, Algorithms & Data Science
+- [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/gibbs-sampling.ipynb)
+- [gaussian-distribution.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/gaussian-distribution.ipynb) Gaussion Distribution(Normal Distribution)
+- [ghost-leg-probabilities.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/ghost-leg-probabilities.ipynb) Ghost Leg Probabilities.
+- [sympy.py](data-science-etc/sympy.py) Partial Derivatives using Sympy.
+- [seaborn.py](data-science-etc/seaborn.py)
+- [hard_sigmoid.py](data-science-etc/hard_sigmoid.py)
+- [poisson.py](data-science-etc/poisson.py) Poisson Distribution
+- [odds-ratio.py](data-science-etc/odds-ratio.py) Odds Ratio 1:3 Relation Graph
+- [vanishing-gradient.py](data-science-etc/vanishing-gradient.py)
+- [prob-with-permutations.py](data-science-etc/prob-with-permutations.py) Probabilities with Duplicate Permutations.
+- [euclidean-v-cosine.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
+- [calc-entropy.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/calc-entropy.ipynb) Entropy graph when one probability is high.
+- [circular-queue](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/circular-queue.ipynb)
