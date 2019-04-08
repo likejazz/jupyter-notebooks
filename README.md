@@ -68,4 +68,4 @@
 - [prob-with-permutations.py](data-science-etc/prob-with-permutations.py) Probabilities with Duplicate Permutations.
 - [euclidean-v-cosine.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
 - [calc-entropy.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/calc-entropy.ipynb) Entropy graph when one probability is high.
-- [circular-queue](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/circular-queue.ipynb)
+- [circular-queue.ipynb (C++)](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/circular-queue.ipynb)
