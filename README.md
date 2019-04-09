@@ -60,11 +60,11 @@
 - [gaussian-distribution.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/gaussian-distribution.ipynb) Gaussion Distribution(Normal Distribution)
 - [ghost-leg-probabilities.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/ghost-leg-probabilities.ipynb) Ghost Leg Probabilities.
 - [sympy.py](data-science/sympy.py) Partial Derivatives using Sympy.
-- [seaborn.py](data-science/seaborn.py)
-- [hard_sigmoid.py](data-science/hard_sigmoid.py)
-- [poisson.py](data-science/poisson.py) Poisson Distribution
-- [odds-ratio.py](data-science/odds-ratio.py) Odds Ratio 1:3 Relation Graph
-- [vanishing-gradient.py](data-science/vanishing-gradient.py)
+- [seaborn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/seaborn.ipynb)
+- [hard-sigmoid.ipynb]https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/hard-sigmoid.ipynb)
+- [poisson-dist.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/poisson-dist.ipynb) Poisson Distribution
+- [odds-ratio.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/odds-ratio.ipynb) Odds Ratio 1:3 Relation Graph
+- [vanishing-gradients.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/vanishing-gradients.ipynb)
 - [prob-with-permutations.py](data-science/prob-with-permutations.py) Probabilities with Duplicate Permutations.
 - [euclidean-v-cosine.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
 - [calc-entropy.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/calc-entropy.ipynb) Entropy graph when one probability is high.
