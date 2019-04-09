@@ -61,7 +61,7 @@
 - [ghost-leg-probabilities.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/ghost-leg-probabilities.ipynb) Ghost Leg Probabilities.
 - [sympy.py](data-science/sympy.py) Partial Derivatives using Sympy.
 - [seaborn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/seaborn.ipynb)
-- [hard-sigmoid.ipynb]https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/hard-sigmoid.ipynb)
+- [hard-sigmoid.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/hard-sigmoid.ipynb)
 - [poisson-dist.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/poisson-dist.ipynb) Poisson Distribution
 - [odds-ratio.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/odds-ratio.ipynb) Odds Ratio 1:3 Relation Graph
 - [vanishing-gradients.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/vanishing-gradients.ipynb)
