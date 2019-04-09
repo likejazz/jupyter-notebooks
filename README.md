@@ -2,7 +2,7 @@
 
 ## Deep Learning
 - [perceptron.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/perceptron.ipynb) Scikit-Learn's Perceptron, Neural Network, Keras on the IRIS dataset.
-- [linear-algebra-transpose-differential.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/linear-algebra-transpose-differential.ipynb)
+- [linear-algebra-transpose-differential.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/linear-algebra-transpose-differential.ipynb)
 - [backpropagation.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/backpropagation.ipynb)
 - [tensorflow-weight.py](deep-learning/tensorflow-weight.py)
     - [linear-regression-tensorflow.py](deep-learning/linear-regression-tensorflow.py)
@@ -56,16 +56,16 @@
 - [loss-3d.py](machine-learning/loss-3d.py) 3D Visualization linear graph with loss value.
 
 ## Math, Statistics, Algorithms & Data Science
-- [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/gibbs-sampling.ipynb)
-- [gaussian-distribution.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/gaussian-distribution.ipynb) Gaussion Distribution(Normal Distribution)
-- [ghost-leg-probabilities.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/ghost-leg-probabilities.ipynb) Ghost Leg Probabilities.
-- [sympy.py](data-science-etc/sympy.py) Partial Derivatives using Sympy.
-- [seaborn.py](data-science-etc/seaborn.py)
-- [hard_sigmoid.py](data-science-etc/hard_sigmoid.py)
-- [poisson.py](data-science-etc/poisson.py) Poisson Distribution
-- [odds-ratio.py](data-science-etc/odds-ratio.py) Odds Ratio 1:3 Relation Graph
-- [vanishing-gradient.py](data-science-etc/vanishing-gradient.py)
-- [prob-with-permutations.py](data-science-etc/prob-with-permutations.py) Probabilities with Duplicate Permutations.
-- [euclidean-v-cosine.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
-- [calc-entropy.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/calc-entropy.ipynb) Entropy graph when one probability is high.
-- [circular-queue.ipynb (C++)](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science-etc/circular-queue.ipynb)
+- [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/gibbs-sampling.ipynb)
+- [gaussian-distribution.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/gaussian-distribution.ipynb) Gaussion Distribution(Normal Distribution)
+- [ghost-leg-probabilities.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/ghost-leg-probabilities.ipynb) Ghost Leg Probabilities.
+- [sympy.py](data-science/sympy.py) Partial Derivatives using Sympy.
+- [seaborn.py](data-science/seaborn.py)
+- [hard_sigmoid.py](data-science/hard_sigmoid.py)
+- [poisson.py](data-science/poisson.py) Poisson Distribution
+- [odds-ratio.py](data-science/odds-ratio.py) Odds Ratio 1:3 Relation Graph
+- [vanishing-gradient.py](data-science/vanishing-gradient.py)
+- [prob-with-permutations.py](data-science/prob-with-permutations.py) Probabilities with Duplicate Permutations.
+- [euclidean-v-cosine.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
+- [calc-entropy.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/calc-entropy.ipynb) Entropy graph when one probability is high.
+- [circular-queue.ipynb (C++)](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/circular-queue.ipynb)
