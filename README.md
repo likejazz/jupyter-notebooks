@@ -13,6 +13,7 @@ title: Jupyter Notebooks
 - [softmax.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/softmax.py) Softmax, Cross-Entropy Loss
 - [sin-graph-prediction.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/sin-graph-prediction.ipynb)
 - [time-series-prediction-rnn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/time-series-prediction-rnn.ipynb)
+- [time-series-lstm-pytorch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/time-series-lstm-pytorch)
 - [pytorch-grad.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch-grad.py) Gradients calculation using PyTorch.
 - [keras-intermediate-debugging.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/keras-intermediate-debugging.ipynb) Intermediate Layer Debugging in Keras.
     - [keras-shape-inspect.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/keras-shape-inspect.py) Validate Merge, Concatenate methods in Keras.
