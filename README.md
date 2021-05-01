@@ -1,10 +1,21 @@
 ---
 layout: wiki 
 title: Jupyter Notebooks
-last-modified: 2020/11/15 12:41:21
+last-modified: 2021/05/01 16:10:30
 ---
 
-## Deep Learning
+<!-- TOC -->
+
+- [Deep Learning](#deep-learning)
+    - [NLP](#nlp)
+- [Machine Learning](#machine-learning)
+- [Math, Statistics & Data Science](#math-statistics--data-science)
+- [GPU Data Science](#gpu-data-science)
+- [etc](#etc)
+
+<!-- /TOC -->
+
+# Deep Learning
 - [perceptron.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/perceptron.ipynb) Scikit-Learn's Perceptron, Neural Network, Keras on the IRIS dataset.
 - [linear-algebra-transpose-differential.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/linear-algebra-transpose-differential.ipynb)
 - [backpropagation.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/backpropagation.ipynb)
@@ -27,7 +38,7 @@ last-modified: 2020/11/15 12:41:21
     - [attention_lstm.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/attention_lstm.py)
     - [keras-attention](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/keras-attention/) Visualize Attention
     
-### NLP
+## NLP
 - [nnlm.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/nlp/nnlm.py) Implementation of Paper "A Neural Probabilistic Language Model(Bengio et al., 2003)"
 - [word2vec.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/nlp/word2vec.py)
 - [vector-representation-of-words.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/nlp/vector-representation-of-words.ipynb)
@@ -40,7 +51,7 @@ last-modified: 2020/11/15 12:41:21
 - [cnn-classification.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/tensorboard/cnn-classification.py) Text Classification with CNN/TensorBoard
 - [bert.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/nlp/bert.py) Example codes for BERT article.
 
-## Conventional Machine Learning
+# Machine Learning
 - [iris-dtreeviz.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/iris-dtreeviz.ipynb) Decision Tree visualization for IRIS dataset.
 - [decision-tree-from-scratch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/decision-tree-from-scratch.ipynb) Decision Tree from a Scratch
 - [news-classification.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/news-classification.ipynb) Decision Tree, Random Forest, Naive Bayes on the UCI News dataset.
@@ -57,10 +68,11 @@ last-modified: 2020/11/15 12:41:21
     - [iris-visualized-by-shap-and-lime.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/iris-visualized-by-shap-and-lime.ipynb) IRIS classification visualized by SHAP and LIME.
     - [keras-lstm-for-imdb-sentiment-classification.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/keras-lstm-for-imdb-sentiment-classification.ipynb) Keras LSTM for IMDb Sentiment Classification visualized by SHAP.
 - [support-vector-machine-explained.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/support-vector-machine-explained.ipynb) Comparison between SVM and Neural Network
+- [gradient-boosting.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/gradient-boosting.py) Gradient Boosting from Scratch
 - [xgboost.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/xgboost.py) GridSearchCV with XGBoost
 - [loss-3d.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/loss-3d.py) 3D Visualization linear graph with loss value.
 
-## Math, Statistics, Algorithms & Data Science
+# Math, Statistics & Data Science
 - [gibbs-sampling.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/gibbs-sampling.ipynb)
 - [gaussian-distribution.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/gaussian-distribution.ipynb) Gaussion Distribution(Normal Distribution)
 - [ghost-leg-probabilities.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/ghost-leg-probabilities.ipynb) Ghost Leg Probabilities.
@@ -74,5 +86,9 @@ last-modified: 2020/11/15 12:41:21
 - [euclidean-v-cosine.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/euclidean-v-cosine.ipynb) Euclidean Distance vs. Cosine Similarity
 - [calc-entropy.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/calc-entropy.ipynb) Entropy graph when one probability is high.
 - [bigquery-pandas.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/bigquery-pandas.ipynb)
-- [circular-queue.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/circular-queue.ipynb) C++ Implementation.
 
+# GPU Data Science
+- [cudf-tutorial.py](https://github.com/likejazz/jupyter-notebooks/blob/master/rapids/cudf-tutorial.py)
+
+# etc
+- [circular-queue.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/circular-queue.ipynb) C++ Implementation.
