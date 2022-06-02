@@ -1,23 +1,23 @@
 ---
 layout: wiki 
 title: Jupyter Notebooks
-last-modified: 2021/05/01 17:24:12
+last-modified: 2022/06/02 14:00:29
 ---
 
 <!-- TOC -->
 
 - [Deep Learning](#deep-learning)
-    - [Keras](#keras)
-    - [PyTorch](#pytorch)
-    - [NLP](#nlp)
+  - [Keras](#keras)
+  - [PyTorch](#pytorch)
+  - [NLP](#nlp)
 - [Machine Learning](#machine-learning)
-    - [Gradient Boosting](#gradient-boosting)
+  - [Gradient Boosting](#gradient-boosting)
 - [Math](#math)
-    - [Probability](#probability)
-    - [Statistics](#statistics)
-- [DataScience](#datascience)
-    - [Cloud Computing](#cloud-computing)
-    - [Algorithms](#algorithms)
+  - [Probability](#probability)
+  - [Statistics](#statistics)
+- [Data Science](#data-science)
+- [Cloud](#cloud)
+- [Algorithms](#algorithms)
 
 <!-- /TOC -->
 
@@ -46,8 +46,9 @@ last-modified: 2021/05/01 17:24:12
     - [lstm-keras-inspect.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/lstm-keras-inspect.py) Validate LSTM calculation.
     
 ## PyTorch
-- [time-series-lstm-pytorch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/time-series-lstm-pytorch.ipynb)
-- [pytorch-grad.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch-grad.py) Gradients calculation using PyTorch.
+- [time-series-lstm-pytorch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/time-series-lstm-pytorch.ipynb)
+- [pytorch-grad.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/pytorch-grad.py) Gradients calculation using PyTorch.
+- [torch-backprop.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/torch-backprop.py) Gradients checking using PyTorch.
 
 ## NLP
 - [nnlm.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/nlp/nnlm.py) Implementation of Paper "A Neural Probabilistic Language Model(Bengio et al., 2003)"
@@ -101,11 +102,12 @@ last-modified: 2021/05/01 17:24:12
 - [poisson-dist.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/poisson-dist.ipynb) Poisson Distribution
 - [odds-ratio.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/odds-ratio.ipynb) Odds Ratio 1:3 Relation Graph
 
-# DataScience
-- [cudf-tutorial.py](https://github.com/likejazz/jupyter-notebooks/blob/master/rapids/cudf-tutorial.py) RAPIDS cuDF
+# Data Science
+- [cudf-tutorial.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/rapids/cudf-tutorial.py) RAPIDS cuDF
 - [seaborn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/seaborn.ipynb)
-## Cloud Computing
+
+# Cloud
 - [bigquery-pandas.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/bigquery-pandas.ipynb)
 
-## Algorithms
+# Algorithms
 - [circular-queue.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/circular-queue.ipynb) C++ Implementation.
