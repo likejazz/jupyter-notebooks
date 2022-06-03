@@ -84,7 +84,7 @@ last-modified: 2022/06/02 14:00:29
 
 ## Gradient Boosting
 - [gradient-boosting.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/gradient-boosting.py) Gradient Boosting from Scratch
-- [xgboost.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/xgboost.py) GridSearchCV with XGBoost
+- [xgboost.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/xgboost-RMSE.py) GridSearchCV with XGBoost
 
 # Math
 - [sympy.py](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/sympy.py) Partial Derivatives using Sympy.
