@@ -83,7 +83,7 @@ last-modified: 2022/06/02 14:00:29
 - [loss-3d.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/loss-3d.py) 3D Visualization linear graph with loss value.
 
 ## Gradient Boosting
-- [gradient-boosting.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/gradient-boosting.py) Gradient Boosting from Scratch
+- [gradient-boosting-from-scratch.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/gradient-boosting-from-scratch.py) Gradient Boosting from Scratch
 - [xgboost.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/xgboost-RMSE.py) GridSearchCV with XGBoost
 
 # Math

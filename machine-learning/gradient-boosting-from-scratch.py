@@ -1,59 +1,42 @@
-from sklearn import datasets, tree, model_selection, metrics
-import numpy as np
+# %%
+import pandas as pd
+from sklearn.model_selection import train_test_split
 
+df_bikes = pd.read_csv('./machine-learning/data/bike_rentals_cleaned.csv')
 
-class GradientBooster:
-    def __init__(self, n_trees=20):
-        self.f = []
-        self.learning_rates = []
-        self.n_trees = n_trees
+X_bikes = df_bikes.iloc[:, :-1]
+y_bikes = df_bikes.iloc[:, -1]
 
-    def fit(self, x, y, lr=0.1):
-        class F0:
-            predict = lambda x: np.mean(y) * np.ones(x.shape[0])
+X_train, X_test, y_train, y_test = train_test_split(X_bikes, y_bikes, random_state=2)
 
-        self.f.append(F0)
-        self.learning_rates.append(1)
+# %%
+from sklearn.tree import DecisionTreeRegressor
 
-        for _ in range(self.n_trees):
-            m = tree.DecisionTreeRegressor(max_depth=5)
-            res = y - self.predict(x)
-            m.fit(x, res)
-            self.f.append(m)
-            self.learning_rates.append(lr)
+y1_train = y_train
 
-    def predict(self, x):
-        s = 0
-        for f, lr in zip(self.f, self.learning_rates):
-            # print(f.predict(x) * lr)
-            s += f.predict(x) * lr
-        # print(s)
-        return s
+tree_1 = DecisionTreeRegressor(max_depth=2, random_state=2)
+tree_1.fit(X_train, y1_train)
+y1_train_pred = tree_1.predict(X_train)
 
+y2_train = y1_train - y1_train_pred
 
-# Some data
-np.random.seed(123)
-x = datasets.load_diabetes()['data']
-y = datasets.load_diabetes()['target']
-x_train, x_test, y_train, y_test = model_selection.train_test_split(x, y)
+tree_2 = DecisionTreeRegressor(max_depth=2, random_state=2)
+tree_2.fit(X_train, y2_train)
+y2_train_pred = tree_2.predict(X_train)
 
+y3_train = y2_train - y2_train_pred
 
-def evaluate(m):
-    print('Training score:', metrics.r2_score(y_train, m.predict(x_train)),
-          '\tTesting score:', metrics.r2_score(y_test, m.predict(x_test)))
+tree_3 = DecisionTreeRegressor(max_depth=2, random_state=2)
+tree_3.fit(X_train, y3_train)
+y3_train_pred = tree_3.predict(X_train)
 
+# %%
+y1_pred = tree_1.predict(X_test)
+y2_pred = tree_2.predict(X_test)
+y3_pred = tree_3.predict(X_test)
 
-if __name__ == '__main__':
-    # Algorithm to beat
-    p = {'max_depth': [5, 10, 15, 20],
-         'min_samples_split': [2, 3, 7],
-         'min_samples_leaf': [1, 3, 7]}
+from sklearn.metrics import mean_squared_error as MSE
 
-    m1 = model_selection.GridSearchCV(tree.DecisionTreeRegressor(), p)
-    # m = tree.DecisionTreeRegressor()
-    m1.fit(x_train, y_train)
-    evaluate(m1)
-
-    m2 = GradientBooster(20)
-    m2.fit(x_train, y_train)
-    evaluate(m2)
+print('y1_pred:', MSE(y_test, y1_pred, squared=False))
+print('y2_pred:', MSE(y_test, y1_pred + y2_pred, squared=False))
+print('y3_pred:', MSE(y_test, y1_pred + y2_pred + y3_pred, squared=False))
