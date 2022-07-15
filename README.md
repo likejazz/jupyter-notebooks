@@ -7,8 +7,8 @@ last-modified: 2022/06/02 14:00:29
 <!-- TOC -->
 
 - [Deep Learning](#deep-learning)
-  - [Keras](#keras)
   - [PyTorch](#pytorch)
+  - [Keras](#keras)
   - [NLP](#nlp)
 - [Machine Learning](#machine-learning)
   - [Gradient Boosting](#gradient-boosting)
@@ -31,6 +31,13 @@ last-modified: 2022/06/02 14:00:29
 - [softmax.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/softmax.py) Softmax, Cross-Entropy Loss
 - [vanishing-gradients.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/vanishing-gradients.ipynb)
 
+## PyTorch
+- [time-series-lstm-pytorch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/time-series-lstm-pytorch.ipynb)
+- [pytorch-grad.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/pytorch-grad.py) Gradients calculation using PyTorch.
+- [torch-backprop.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/torch-backprop.py) Gradients checking using PyTorch.
+- [transformer-sentiment-analysis.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/transformer-sentiment-analysis.ipynb) Sentiment Analysis with Transformers(BERT).
+- [calc-cross-entropy.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/calc-cross-entropy.py) Calculate Cross-Entropy from Scratch.
+
 ## Keras
 - [sin-graph-prediction.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/sin-graph-prediction.ipynb)
 - [time-series-prediction-rnn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/time-series-prediction-rnn.ipynb)
@@ -45,12 +52,6 @@ last-modified: 2022/06/02 14:00:29
     - [cnn-conv2d-internals.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/cnn-conv2d-internals.py) Validate Conv2D on the Image dataset.
     - [lstm-keras-inspect.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/lstm-keras-inspect.py) Validate LSTM calculation.
     
-## PyTorch
-- [time-series-lstm-pytorch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/time-series-lstm-pytorch.ipynb)
-- [pytorch-grad.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/pytorch-grad.py) Gradients calculation using PyTorch.
-- [torch-backprop.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/torch-backprop.py) Gradients checking using PyTorch.
-- [transformer-sentiment-analysis.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/transformer-sentiment-analysis.ipynb) Sentiment Analysis with Transformers(BERT).
-
 ## NLP
 - [nnlm.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/nlp/nnlm.py) Implementation of Paper "A Neural Probabilistic Language Model(Bengio et al., 2003)"
 - [word2vec.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/nlp/word2vec.py)
