@@ -1,7 +1,7 @@
 ---
 layout: wiki 
 title: Jupyter Notebooks
-last-modified: 2022/06/02 14:00:29
+last-modified: 2022/10/31 21:33:49
 ---
 
 <!-- TOC -->
@@ -16,6 +16,7 @@ last-modified: 2022/06/02 14:00:29
   - [Probability](#probability)
   - [Statistics](#statistics)
 - [Data Science](#data-science)
+  - [RAPIDS](#rapids)
 - [Cloud](#cloud)
 - [Algorithms](#algorithms)
 
@@ -105,8 +106,9 @@ last-modified: 2022/06/02 14:00:29
 - [odds-ratio.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/odds-ratio.ipynb) Odds Ratio 1:3 Relation Graph
 
 # Data Science
-- [cudf-tutorial.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/rapids/cudf-tutorial.py) RAPIDS cuDF
 - [seaborn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/seaborn.ipynb)
+## RAPIDS
+- [cudf-tutorial.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/rapids/cudf-tutorial.py) RAPIDS cuDF
 - [pandas-dask-cudf-comparison-on-gpu.ipynb](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/pandas-dask-cudf-comparison-on-gpu.ipynb)
 - [dask-dataframes-in-memory-with-persist.ipynb](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/dask-dataframes-in-memory-with-persist.ipynb)
 - [dask-cudf-experiments.ipynb](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/dask-cudf-experiments.ipynb)
