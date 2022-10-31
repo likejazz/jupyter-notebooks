@@ -109,6 +109,7 @@ last-modified: 2022/06/02 14:00:29
 - [seaborn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/seaborn.ipynb)
 - [pandas-dask-cudf-comparison-on-gpu.ipynb](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/pandas-dask-cudf-comparison-on-gpu.ipynb)
 - [dask-dataframes-in-memory-with-persist.ipynb](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/dask-dataframes-in-memory-with-persist.ipynb)
+- [dask-cudf-experiments.ipynb](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/dask-cudf-experiments.ipynb)
 
 # Cloud
 - [bigquery-pandas.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/bigquery-pandas.ipynb)
