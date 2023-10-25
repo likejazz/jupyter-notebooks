@@ -39,6 +39,7 @@ last-modified: 2022/10/31 21:33:49
 - [transformer-sentiment-analysis.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/transformer-sentiment-analysis.ipynb) Sentiment Analysis with Transformers(BERT).
 - [calc-cross-entropy.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/calc-cross-entropy.py) Calculate Cross-Entropy from Scratch.
 - [xor-grad.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/xor-grad.py) Calculate gradient change in the XOR example.
+- [embedding.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/embedding.py) Check the range of embedding values in the torch random embedding initialization.
 
 ## Keras
 - [sin-graph-prediction.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/sin-graph-prediction.ipynb)

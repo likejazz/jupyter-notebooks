@@ -1,7 +1,7 @@
 # %%
 # https://weiliu2k.github.io/CITS4012/pytorch/nn_oop.html
 # https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html
-# https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
+# https://github.com/jcjohnson/pytorch-examples
 
 import torch
 import matplotlib.pyplot as plt
