@@ -1,7 +1,7 @@
 ---
 layout: wiki 
 title: Jupyter Notebooks
-last-modified: 2022/10/31 21:33:49
+last-modified: 2023/11/02 18:42:27
 ---
 
 <!-- TOC -->
@@ -19,6 +19,7 @@ last-modified: 2022/10/31 21:33:49
   - [RAPIDS](#rapids)
 - [Cloud](#cloud)
 - [Algorithms](#algorithms)
+- [Langchain, OpenAI API examples](#langchain-openai-api-examples)
 
 <!-- /TOC -->
 
@@ -33,6 +34,7 @@ last-modified: 2022/10/31 21:33:49
 - [vanishing-gradients.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/vanishing-gradients.ipynb)
 
 ## PyTorch
+- 
 - [time-series-lstm-pytorch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/time-series-lstm-pytorch.ipynb)
 - [pytorch-grad.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/pytorch-grad.py) Gradients calculation using PyTorch.
 - [torch-backprop.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/torch-backprop.py) Gradients checking using PyTorch.
@@ -40,6 +42,7 @@ last-modified: 2022/10/31 21:33:49
 - [calc-cross-entropy.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/calc-cross-entropy.py) Calculate Cross-Entropy from Scratch.
 - [xor-grad.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/xor-grad.py) Calculate gradient change in the XOR example.
 - [embedding.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/embedding.py) Check the range of embedding values in the torch random embedding initialization.
+- [torchmetrics.py](/deep-learning/pytorch/torchmetrics.py)
 
 ## Keras
 - [sin-graph-prediction.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/sin-graph-prediction.ipynb)
@@ -109,14 +112,15 @@ last-modified: 2022/10/31 21:33:49
 
 # Data Science
 - [seaborn.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/seaborn.ipynb)
+
 ## RAPIDS
-- [cudf-tutorial.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/rapids/cudf-tutorial.py) RAPIDS cuDF
-- [pandas-dask-cudf-comparison-on-gpu.ipynb](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/pandas-dask-cudf-comparison-on-gpu.ipynb)
-- [dask-dataframes-in-memory-with-persist.ipynb](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/dask-dataframes-in-memory-with-persist.ipynb)
-- [dask-cudf-experiments.ipynb](https://github.com/likejazz/jupyter-notebooks/blob/master/data-science/dask-cudf-experiments.ipynb)
+- [rapids-examples/](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/rapids/)
 
 # Cloud
 - [bigquery-pandas.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/bigquery-pandas.ipynb)
 
 # Algorithms
 - [circular-queue.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/circular-queue.ipynb) C++ Implementation.
+
+# Langchain, OpenAI API examples
+- [Langchain, OpenAI API examples/](/langchain/)
