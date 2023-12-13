@@ -84,6 +84,10 @@ chain = ConversationChain(
     llm=OpenAI(temperature=0),
     verbose=True
 )
+cchain = ConversationChain(
+    llm=OpenAI(temperature=0),
+    verbose=True
+)
 
 # %%
 # 체인 실행
@@ -92,3 +96,11 @@ chain.run("우리집 반려견 이름은 보리입니다")
 # %%
 # 체인 실행
 chain.predict(input="우리집 반려견 이름을 불러주세요")
+
+# %%
+from langchain.prompts import ChatPromptTemplate
+from langchain.chat_models import ChatOpenAI
+
+prompt = ChatPromptTemplate.from_template("{foo}에 관한 실없는 얘기 해봐")
+model = ChatOpenAI()
+chain = prompt | model

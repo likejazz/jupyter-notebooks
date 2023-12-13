@@ -1,7 +1,7 @@
 ---
 layout: wiki 
 title: Jupyter Notebooks
-last-modified: 2023/11/02 18:42:27
+last-modified: 2023/12/13 15:50:43
 ---
 
 <!-- TOC -->
@@ -10,6 +10,7 @@ last-modified: 2023/11/02 18:42:27
   - [PyTorch](#pytorch)
   - [Keras](#keras)
   - [NLP](#nlp)
+  - [trlX](#trlx)
 - [Machine Learning](#machine-learning)
   - [Gradient Boosting](#gradient-boosting)
 - [Math](#math)
@@ -34,7 +35,6 @@ last-modified: 2023/11/02 18:42:27
 - [vanishing-gradients.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/data-science/vanishing-gradients.ipynb)
 
 ## PyTorch
-- 
 - [time-series-lstm-pytorch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/time-series-lstm-pytorch.ipynb)
 - [pytorch-grad.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/pytorch-grad.py) Gradients calculation using PyTorch.
 - [torch-backprop.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/pytorch/torch-backprop.py) Gradients checking using PyTorch.
@@ -71,6 +71,9 @@ last-modified: 2023/11/02 18:42:27
 - [cnn-classification.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/tensorboard/cnn-classification.py) Text Classification with CNN/TensorBoard
 - [bert.py](https://github.com/likejazz/jupyter-notebooks/blob/master/deep-learning/nlp/bert.py) Example codes for BERT article.
 
+## trlX
+- [loss.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/deep-learning/trlx/loss.ipynb)
+
 # Machine Learning
 - [iris-dtreeviz.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/iris-dtreeviz.ipynb) Decision Tree visualization for IRIS dataset.
 - [decision-tree-from-scratch.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/decision-tree-from-scratch.ipynb) Decision Tree from a Scratch
@@ -89,6 +92,7 @@ last-modified: 2023/11/02 18:42:27
     - [keras-lstm-for-imdb-sentiment-classification.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/keras-lstm-for-imdb-sentiment-classification.ipynb) Keras LSTM for IMDb Sentiment Classification visualized by SHAP.
 - [support-vector-machine-explained.ipynb](https://nbviewer.jupyter.org/github/likejazz/jupyter-notebooks/blob/master/machine-learning/support-vector-machine-explained.ipynb) Comparison between SVM and Neural Network
 - [loss-3d.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/loss-3d.py) 3D Visualization linear graph with loss value.
+- [openai-embeddings.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/openai-embeddings.py)
 
 ## Gradient Boosting
 - [gradient-boosting-from-scratch.py](https://github.com/likejazz/jupyter-notebooks/blob/master/machine-learning/gradient-boosting-from-scratch.py) Gradient Boosting from Scratch
